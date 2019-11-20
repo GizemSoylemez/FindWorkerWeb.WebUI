@@ -1,0 +1,1 @@
+var i18n_array = {"non-0":[{"follow_btn":"Takip Et","follow_active_btn":"Takip Ediliyor","apply_then_no_html":"Bu ilana ((DATE)) başvurdunuz."}]}

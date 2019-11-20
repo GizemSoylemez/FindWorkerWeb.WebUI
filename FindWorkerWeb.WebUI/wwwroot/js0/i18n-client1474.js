@@ -1,0 +1,1 @@
+var i18n_array = {"i18n_form_errors":[{"required":"Bu alan zorunludur","email_type":"Lütfen geçerli bir mail adresi giriniz.","email_use_error":"Bu e-mail adresi başka biri tarafından alınmış veya uygun değildir","password_six_cr":"Lütfen en az 6 karakter uzunluğunda bir değer giriniz."}]}
