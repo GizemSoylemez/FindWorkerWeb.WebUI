@@ -120,6 +120,7 @@ C:\Users\gizem\Desktop\FindWorkerWeb.WebUI\FindWorkerWeb.WebUI\obj\Debug\netcore
 C:\Users\gizem\Desktop\FindWorkerWeb.WebUI\FindWorkerWeb.WebUI\obj\Debug\netcoreapp3.0\Razor\Views\Home\Index.cshtml.g.cs
 C:\Users\gizem\Desktop\FindWorkerWeb.WebUI\FindWorkerWeb.WebUI\obj\Debug\netcoreapp3.0\Razor\Views\Login\Index.cshtml.g.cs
 C:\Users\gizem\Desktop\FindWorkerWeb.WebUI\FindWorkerWeb.WebUI\bin\Debug\netcoreapp3.0\RestSharp.dll
-C:\Users\gizem\Desktop\FindWorkerWeb.WebUI\FindWorkerWeb.WebUI\obj\Debug\netcoreapp3.0\FindWorkerWeb.WebUI.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\gizem\Desktop\FindWorkerWeb.WebUI\FindWorkerWeb.WebUI\obj\Debug\netcoreapp3.0\Razor\Views\Login\Register.cshtml.g.cs
 C:\Users\gizem\Desktop\FindWorkerWeb.WebUI\FindWorkerWeb.WebUI\obj\Debug\netcoreapp3.0\Razor\Views\Home\AnaSayfa.cshtml.g.cs
+C:\Users\gizem\Desktop\FindWorkerWeb.WebUI\FindWorkerWeb.WebUI\obj\Debug\netcoreapp3.0\FindWorkerWeb.WebUI.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\gizem\Desktop\FindWorkerWeb.WebUI\FindWorkerWeb.WebUI\bin\Debug\netcoreapp3.0\FluentValidation.dll

@@ -1,6 +1,7 @@
-﻿
+﻿@model FindWorkerWeb.WebUI.Models.UserModel
 @{
     Layout = null;
+    
 }
 
 
@@ -64,30 +65,39 @@
                     <div class="homepage_input form-group clearfix">
                         <div class="half_input left">
                             <input type="text" name="Name" placeholder="Ad" class="form-control focusx">
+                            <span class="help-block"> </span>
+                            <span asp-validation-for="Name">  </span>
                         </div>
                         <div class="half_input right">
                             <input type="text" name="Surname" placeholder="Soyad" class="form-control">
+                            <span class="help-block"> </span>
+                            <span asp-validation-for="SurName">  </span>
                         </div>
                     </div>
                     <div class="homepage_input form-group">
                         <input type="text" name="UserName" placeholder="Kullanıcı Adı" class="form-control">
                         <span class="help-block"> </span>
+                        <span asp-validation-for="UserName">  </span>
                     </div>
 
                     <div class="homepage_input form-group">
                         <input type="text" name="Email" placeholder="E-Mail " class="form-control">
                         <span class="help-block"> </span>
+                        <span asp-validation-for="Email">  </span>
                     </div>
                     <div class="homepage_input form-group">
                         <input type="text" name="PhoneNumber" placeholder="Telefon Numarası " class="form-control">
                         <span class="help-block"> </span>
+                        <span asp-validation-for="PhoneNumber">  </span>
                     </div>
                     <div class="homepage_input form-group">
                         <input type="password" name="Password" placeholder="Şifre (minimum 6 karakter)" class="form-control">
+                        <span asp-validation-for="Password">  </span>
                     </div>
                     
                     <div class="homepage_input form-group">
                         <input type="submit" value="Kayıt Ol" style="padding: 0" class="form-control homepage_signup_button">
+
                     </div>
 
                 </form>

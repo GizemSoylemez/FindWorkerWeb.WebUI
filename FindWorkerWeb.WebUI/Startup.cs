@@ -9,6 +9,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.AspNetCore.Session;
+using FindWorkerWeb.WebUI.Models;
+using FluentValidation;
 
 namespace FindWorkerWeb.WebUI
 {
@@ -32,6 +34,8 @@ namespace FindWorkerWeb.WebUI
                 options.Cookie.HttpOnly = true;
                 options.Cookie.IsEssential = true;
             });
+
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

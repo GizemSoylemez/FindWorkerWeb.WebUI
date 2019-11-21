@@ -17,11 +17,14 @@ namespace FindWorkerWeb.WebUI.Controllers
         {
             return View();
         }
-
+       
         public IActionResult Register()
         {
             return View();
         }
+       
+        
+
         public IActionResult UserRegister([FromForm] UserModel user)
         {
 
