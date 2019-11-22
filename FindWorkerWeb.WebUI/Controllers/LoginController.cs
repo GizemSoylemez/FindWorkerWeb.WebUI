@@ -22,10 +22,19 @@ namespace FindWorkerWeb.WebUI.Controllers
         {
             return View();
         }
-       
-        
 
-        public IActionResult UserRegister([FromForm] UserModel user)
+        public IActionResult UserPanel()
+        {
+            return View();
+        }
+
+
+
+
+
+
+        [HttpPost]
+        public IActionResult Register([FromForm]UserModel user)
         {
 
             //var client = new RestClient("http://192.168.1.8/api/");
@@ -34,8 +43,16 @@ namespace FindWorkerWeb.WebUI.Controllers
             //request.AddJsonBody(user);
             //IRestResponse response = client.Execute(request);
             //var content = response.Content;
-            var response=ApiHelper.Post("Register/RegisterUser", user);
-            return Redirect("/");
+            //var response=ApiHelper.Post("Register/RegisterUser", user);
+            
+           
+            if (ModelState.IsValid)
+            {
+                var response = ApiHelper.Post("Register/RegisterUser", user);
+
+                return Redirect("/");
+            }
+            return View();
         }
         public IActionResult CompanyRegister([FromForm] CompanyModel company)
         {
@@ -44,8 +61,15 @@ namespace FindWorkerWeb.WebUI.Controllers
             //request.AddHeader("Content-Type", "application/json");
             //request.AddJsonBody(company);
             //IRestResponse response = client.Execute(request);
-            var response = ApiHelper.Post("Register/RegisterCompany", company);
-            return Redirect("/");
+            //var response = ApiHelper.Post("Register/RegisterCompany", company);
+            
+
+            if (ModelState.IsValid)
+            {
+                var response = ApiHelper.Post("Register/RegisterCompany", company);
+            }
+
+            return View("Register");
         }
 
         [HttpPost]
@@ -97,7 +121,7 @@ namespace FindWorkerWeb.WebUI.Controllers
                 HttpContext.Session.SetString("CompanyEmail", companydata.CompanyEmail);
                 HttpContext.Session.SetString("RoleId", companydata.RoleId.ToString());
             }
-            return Redirect("/");
+            return Redirect("UserPanel");
         }
     }
     public class Token
