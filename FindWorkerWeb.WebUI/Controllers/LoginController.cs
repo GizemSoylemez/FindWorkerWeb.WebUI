@@ -97,6 +97,8 @@ namespace FindWorkerWeb.WebUI.Controllers
                 var userdata=(LoginUserModel)ApiHelper.Get<LoginUserModel>("User/GetLoginUser",token:usertoken.token);
                 HttpContext.Session.SetString("Email", userdata.Email);
                 HttpContext.Session.SetString("RoleId", userdata.RoleId.ToString());
+                HttpContext.Session.SetString("Name", userdata.Name);
+
 
             }
             

@@ -1,4 +1,4 @@
-﻿
+﻿@using Microsoft.AspNetCore.Http;
 @{
     Layout = null;
 }
@@ -24,58 +24,58 @@
 
 
 
-    <body class="inside">
-        <nav role="navigation" class="navbar navbar-inverse navbar-fixed-top">
-            <div class="container">
-                <div class="navbar-header">
+<body class="inside">
+    <nav role="navigation" class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
 
-                    <button type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" class="navbar-toggle collapsed">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button><a href="index.html" class="logo_inside">FİNDWORK-ER</a>
+                <button type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" class="navbar-toggle collapsed">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button><a href="/Login/UserPanel" class="logo_inside">FİNDWORK-ER</a>
 
-                </div>
-                <div id="bs-example-navbar-collapse-1" style="background: #444" class="collapse navbar-collapse">
-                    
-                    <ul class="nav navbar-nav">
-                        <li><a href="/following">Profilim</a></li>
-                        <li><a href="/messages">Mesajlar</a></li>
-                    </ul>
-                    <ul class="nav navbar-nav navbar-right">
-                        <li class="dropdown">
-                            <a href="#" data-toggle="dropdown" style="height: 50px;" class="dropdown-toggle">
-                                <div style="padding-left: 7px" class="pull-right"><span class="caret"></span></div>
-                                <div style="background: #fff;" class="top_profile_img"><img src="" width="35" height="35" style="border-radius: 100px; display: none" class="top_profile_img_img"></div><span class="hidden-md"> </span>
-                            </a>
-                            <ul role="menu" class="dropdown-menu">
-                                <li><a href="/profile">Profilimi Göster</a></li>
-                                <li><a href="/profile/edit">Profilimi Düzenle</a></li>
-                                <li class="divider"></li>
-                                <li><a href="/settings/password">Ayarlar</a></li>
-                                <li><a href="/Home/CikisYap">Çıkış</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
             </div>
-        </nav>
-        <div class="container no_padding">
-            @RenderBody()
+            <div id="bs-example-navbar-collapse-1" style="background: #444" class="collapse navbar-collapse">
+
+                <ul class="nav navbar-nav">
+                    <li><a href="/following">Profilim</a></li>
+                    <li><a href="/messages">Mesajlar</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" data-toggle="dropdown" style="height: 50px;" class="dropdown-toggle">
+                            <div style="padding-left: 7px" class="pull-right"><span class="caret"></span></div>
+                            <div style="background: #fff;" class="top_profile_img"><img src="" width="35" height="35" style="border-radius: 100px; display: none" class="top_profile_img_img"></div><span class="hidden-md"> @Context.Session.GetString("Name")</span>
+                        </a>
+                        <ul role="menu" class="dropdown-menu">
+                            <li><a href="/profile">Profilimi Göster</a></li>
+                            <li><a href="/profile/edit">Profilimi Düzenle</a></li>
+                            <li class="divider"></li>
+                            <li><a href="/settings/password">Ayarlar</a></li>
+                            <li><a href="/Home/CikisYap">Çıkış</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
         </div>
-    
+    </nav>
+    <div class="container no_padding">
+        @RenderBody()
+    </div>
+
     <div class="footer"></div>
     <script src="/js0/i18n-client.js?q=non|follow_btn,follow_active_btn,apply_then_no_html"></script>
     <script src="/js/jquery.min.js"></script>
     <script src="/js/d.js"></script>
     <script src="/js/bootstrap.min.js"></script>
     <script>
-        (function(i, s, o, g, r, a, m) {
+        (function (i, s, o, g, r, a, m) {
             i['GoogleAnalyticsObject'] = r;
-            i[r] = i[r] || function() {
-                    (i[r].q = i[r].q || []).push(arguments);
-                },
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments);
+            },
                 i[r].l = 1 * new Date();
             a = s.createElement(o),
                 m = s.getElementsByTagName(o)[0];
@@ -86,7 +86,7 @@
         ga('create', 'UA-47702418-3', 'auto');
         ga('send', 'pageview');
     </script>
-   
+
     <script src="/js/jquery-scrolltofixed-min.js"></script>
     <script src="/js/u.js"></script>
     <script src="/socket.io/socket.io.js"></script>
