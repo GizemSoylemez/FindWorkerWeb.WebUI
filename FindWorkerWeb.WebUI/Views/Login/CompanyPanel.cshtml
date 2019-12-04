@@ -1,0 +1,376 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!doctype html>
+<html lang="en">
+
+<!-- Google Web Fonts
+================================================== -->
+
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900%7COverpass:300,400,600,700,800,900" rel="stylesheet">
+
+<!-- Basic Page Needs
+================================================== -->
+
+<title>Autotrader</title>
+
+<!--meta info-->
+<!-- Mirrored from velikorodnov.com/html/autotrader/home_3.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 26 Nov 2019 22:48:37 GMT -->
+<meta charset="utf-8">
+<meta name="author" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+
+<!-- Mobile Specific Metas
+================================================== -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+<!-- Vendor CSS
+============================================ -->
+
+<link rel="stylesheet" href="http://velikorodnov.com/html/autotrader/font/demo-files/demo.css">
+
+<!-- CSS theme files
+============================================ -->
+<link rel="stylesheet" href="http://velikorodnov.com/html/autotrader/css/bootstrap.min.css">
+<link rel="stylesheet" href="http://velikorodnov.com/html/autotrader/css/fontello.css">
+<link rel="stylesheet" href="http://velikorodnov.com/html/autotrader/css/owl.carousel.css">
+<link rel="stylesheet" href="http://velikorodnov.com/html/autotrader/css/style.css">
+<link rel="stylesheet" href="http://velikorodnov.com/html/autotrader/css/responsive.css">
+
+<body>
+
+    <div id="loader">
+        <div class="box loading"></div>
+    </div>
+
+    <!--cookie-->
+    <!-- <div class="cookie">
+            <div class="container">
+              <div class="clearfix">
+                <span>Please note this website requires cookies in order to function correctly, they do not store any specific information about you personally.</span>
+                <div class="f-right"><a href="#" class="button button-type-3 button-orange">Accept Cookies</a><a href="#" class="button button-type-3 button-grey-light">Read More</a></div>
+              </div>
+            </div>
+          </div>-->
+    <!-- - - - - - - - - - - - - - Wrapper - - - - - - - - - - - - - - - - -->
+
+    <div id="wrapper" class="wrapper-container">
+
+        <!-- - - - - - - - - - - - - Mobile Menu - - - - - - - - - - - - - - -->
+
+        <nav id="mobile-advanced" class="mobile-advanced"></nav>
+
+
+        <div class="media-holder type-2" data-bg="http://velikorodnov.com/html/autotrader/images/1920x500_bg1.jpg">
+
+            <div class="container">
+
+                <div class="tabs type-2 style-3 tabs-section clearfix">
+                    <!--tabs navigation-->
+                    <ul class="tabs-nav clearfix">
+                        <li class="">
+                            <a href="#tab-1">Find a Car</a>
+                        </li>
+                        <li class="">
+                            <a href="#tab-2">Find a Part or Accessory</a>
+                        </li>
+                        <li class="">
+                            <a href="#tab-3">Find a Dealer</a>
+                        </li>
+                    </ul>
+                    <!--tabs content-->
+                    <div class="tabs-content">
+                        <div id="tab-1">
+
+                            <div class="input-wrapper">
+
+                                <input type="checkbox" name="checkbox-1" id="checkbox-1" checked="">
+                                <label for="checkbox-1">All Vehicles</label>
+
+                                <input type="checkbox" name="checkbox-2" id="checkbox-2">
+                                <label for="checkbox-2">New</label>
+
+                                <input type="checkbox" name="checkbox-3" id="checkbox-3">
+                                <label for="checkbox-3">Used</label>
+
+                                <input type="checkbox" name="checkbox-4" id="checkbox-4">
+                                <label for="checkbox-4">Certified Pre-Owned</label>
+
+                            </div>
+
+                            <div class="select-area tab-col-2">
+
+                                <div class="select-col">
+
+                                    <div class="auto-custom-select">
+                                        <select data-default-text="All Makes">
+                                            <option value="Option 1">Option 1</option>
+                                            <option value="Option 2">Option 2</option>
+                                            <option value="Option 3">Option 3</option>
+                                        </select>
+                                    </div>
+
+                                </div>
+
+                                <div class="select-col">
+
+                                    <div class="auto-custom-select">
+                                        <select data-default-text="All Models">
+                                            <option value="Option 1">Option 1</option>
+                                            <option value="Option 2">Option 2</option>
+                                            <option value="Option 3">Option 3</option>
+                                        </select>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="select-area tab-col-3">
+
+                                <div class="select-col">
+
+                                    <div class="auto-custom-select">
+                                        <select data-default-text="Max Price">
+                                            <option value="Option 1">Option 1</option>
+                                            <option value="Option 2">Option 2</option>
+                                            <option value="Option 3">Option 3</option>
+                                        </select>
+                                    </div>
+
+                                </div>
+
+                                <div class="select-col">
+
+                                    <div class="auto-custom-select">
+                                        <select data-default-text="Max Mileage">
+                                            <option value="Option 1">Option 1</option>
+                                            <option value="Option 2">Option 2</option>
+                                            <option value="Option 3">Option 3</option>
+                                        </select>
+                                    </div>
+
+                                </div>
+
+                                <div class="select-col">
+
+                                    <div class="auto-custom-select">
+                                        <select data-default-text="Min Year">
+                                            <option value="Option 1">Option 1</option>
+                                            <option value="Option 2">Option 2</option>
+                                            <option value="Option 3">Option 3</option>
+                                        </select>
+                                    </div>
+
+                                </div>
+
+                                <div class="select-col">
+
+                                    <div class="auto-custom-select">
+                                        <select data-default-text="10 miles from">
+                                            <option value="Option 1">Option 1</option>
+                                            <option value="Option 2">Option 2</option>
+                                            <option value="Option 3">Option 3</option>
+                                        </select>
+                                    </div>
+
+                                </div>
+
+                                <div class="select-col">
+
+                                    <form class="lineform">
+                                        <input type="text" placeholder="ZIP">
+                                    </form>
+
+                                </div>
+
+                                <div class="select-col">
+                                    <a href="#" class="btn btn-style-3"><i class="licon-magnifier"></i>Search</a>
+                                </div>
+
+                            </div>
+
+                            <a href="#" class="info-btn">More search options</a>
+
+                        </div>
+                        <div id="tab-2">
+
+                            <div class="select-area tab-col-2">
+
+                                <div class="select-col">
+
+                                    <div class="auto-custom-select">
+                                        <select data-default-text="All Makes">
+                                            <option value="Option 1">Option 1</option>
+                                            <option value="Option 2">Option 2</option>
+                                            <option value="Option 3">Option 3</option>
+                                        </select>
+                                    </div>
+
+                                </div>
+
+                                <div class="select-col">
+
+                                    <div class="auto-custom-select">
+                                        <select data-default-text="All Models">
+                                            <option value="Option 1">Option 1</option>
+                                            <option value="Option 2">Option 2</option>
+                                            <option value="Option 3">Option 3</option>
+                                        </select>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="select-area tab-col-3">
+
+                                <div class="select-col">
+
+                                    <div class="auto-custom-select">
+                                        <select data-default-text="Max Price">
+                                            <option value="Option 1">Option 1</option>
+                                            <option value="Option 2">Option 2</option>
+                                            <option value="Option 3">Option 3</option>
+                                        </select>
+                                    </div>
+
+                                </div>
+
+                                <div class="select-col col-extra">
+
+                                    <form class="lineform">
+                                        <input type="text" placeholder="a product, brand or keyword">
+                                    </form>
+
+                                </div>
+
+                            </div>
+
+                            <div class="select-area tab-col-3">
+
+                                <div class="select-col">
+
+                                    <a href="#" class="info-btn">More search options</a>
+
+                                </div>
+
+                                <div class="select-col"></div>
+
+                                <div class="select-col">
+
+                                    <a href="#" class="btn btn-style-3"><i class="licon-magnifier"></i>Search</a>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div id="tab-3">
+
+                            <p>Find dealers who specialize in new, certified and used cars or trucks.</p>
+
+                            <div class="select-area tab-col-auto">
+
+                                <div class="select-col">
+
+                                    <div class="auto-custom-select">
+                                        <select data-default-text="All Makes">
+                                            <option value="Option 1">Acura</option>
+                                            <option value="Option 2">Audi</option>
+                                            <option value="Option 3">Alfa Romeo</option>
+                                        </select>
+                                    </div>
+
+                                </div>
+
+                                <div class="select-col">
+
+                                    <form class="lineform">
+                                        <input type="text" placeholder="ZIP">
+                                    </form>
+
+                                </div>
+
+                                <div class="select-col">
+                                    <a href="#" class="btn btn-style-3"><i class="licon-magnifier"></i>Search</a>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- - - - - - - - - - - - - - Content - - - - - - - - - - - - - - - - -->
+
+        <div id="content">
+
+            <div class="page-section-bg">
+
+                <div class="car-carousel">
+
+
+
+                    <div class="container">
+
+                        <div class="flex-row flex-justify flex-center">
+
+                            <h3 class="section-title">Featured Car Inventory</h3>
+                            <div class="btn-list">
+                                <a href="#" class="btn">View used car inventory</a>
+                                <a href="#" class="btn">View New car inventory</a>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+
+
+
+
+                </div>
+
+            </div>
+
+
+
+
+
+
+
+        </div>
+
+        ============================================ -->
+        <script src="http://velikorodnov.com/html/autotrader/js/libs/jquery.modernizr.js"></script>
+        <script src="http://velikorodnov.com/html/autotrader/js/libs/jquery-2.2.4.min.js"></script>
+        <script src="http://velikorodnov.com/html/autotrader/js/libs/jquery-ui.min.js"></script>
+        <script src="http://velikorodnov.com/html/autotrader/js/libs/retina.min.js"></script>
+        <script src="http://velikorodnov.com/html/autotrader/plugins/mad.customselect.js"></script>
+        <script src="http://velikorodnov.com/html/autotrader/plugins/sticky-sidebar.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?libraries=places&amp;key=AIzaSyBN4XjYeIQbUspEkxCV2dhVPSoScBkIoic"></script>
+        <script src="http://velikorodnov.com/html/autotrader/plugins/jquery.queryloader2.min.js"></script>
+        <script src="http://velikorodnov.com/html/autotrader/plugins/owl.carousel.min.js"></script>
+        <script src="http://velikorodnov.com/html/autotrader/plugins/fancybox/jquery.fancybox.min.js"></script>
+        <script src="http://velikorodnov.com/html/autotrader/plugins/instafeed.min.js"></script>
+        <script src="http://velikorodnov.com/html/autotrader/plugins/twitter/jquery.tweet.js"></script>
+
+        <!-- JS theme files
+        ============================================ -->
+        <script src="http://velikorodnov.com/html/autotrader/js/plugins.js"></script>
+        <script src="http://velikorodnov.com/html/autotrader/js/script.js"></script>
+
+</body>
+
+<!-- Mirrored from velikorodnov.com/html/autotrader/home_3.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 26 Nov 2019 22:48:37 GMT -->
+</html>

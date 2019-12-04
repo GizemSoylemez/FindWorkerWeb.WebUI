@@ -10,7 +10,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.AspNetCore.Session;
 using FindWorkerWeb.WebUI.Models;
-using FluentValidation;
+
 
 namespace FindWorkerWeb.WebUI
 {

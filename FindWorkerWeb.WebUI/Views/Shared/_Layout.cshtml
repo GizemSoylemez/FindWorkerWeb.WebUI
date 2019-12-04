@@ -47,7 +47,10 @@
                     <li class="dropdown">
                         <a href="#" data-toggle="dropdown" style="height: 50px;" class="dropdown-toggle">
                             <div style="padding-left: 7px" class="pull-right"><span class="caret"></span></div>
-                            <div style="background: #fff;" class="top_profile_img"><img src="" width="35" height="35" style="border-radius: 100px; display: none" class="top_profile_img_img"></div><span class="hidden-md"> @Context.Session.GetString("Name")</span>
+                            <div style="background: #fff;" class="top_profile_img">
+                                <img src="" width="35" height="35" style="border-radius: 100px; display: none" class="top_profile_img_img">
+                            </div>
+                            <span class="hidden-md"> @Context.Session.GetString("Name")</span>
                         </a>
                         <ul role="menu" class="dropdown-menu">
                             <li><a href="/profile">Profilimi Göster</a></li>

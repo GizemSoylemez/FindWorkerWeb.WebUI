@@ -17,7 +17,7 @@ namespace FindWorkerWeb.WebUI.Controllers
         {
             return View();
         }
-       
+
         public IActionResult Register()
         {
             return View();
@@ -28,7 +28,10 @@ namespace FindWorkerWeb.WebUI.Controllers
             return View();
         }
 
-
+        public IActionResult CompanyPanel()
+        {
+            return View();
+        }
 
 
 
@@ -44,8 +47,8 @@ namespace FindWorkerWeb.WebUI.Controllers
             //IRestResponse response = client.Execute(request);
             //var content = response.Content;
             //var response=ApiHelper.Post("Register/RegisterUser", user);
-            
-           
+
+
             if (ModelState.IsValid)
             {
                 var response = ApiHelper.Post("Register/RegisterUser", user);
@@ -62,7 +65,7 @@ namespace FindWorkerWeb.WebUI.Controllers
             //request.AddJsonBody(company);
             //IRestResponse response = client.Execute(request);
             //var response = ApiHelper.Post("Register/RegisterCompany", company);
-            
+
 
             if (ModelState.IsValid)
             {
@@ -71,6 +74,9 @@ namespace FindWorkerWeb.WebUI.Controllers
 
             return View("Register");
         }
+
+
+       
 
         [HttpPost]
         public IActionResult Login([FromForm] UserModel user)
@@ -83,9 +89,9 @@ namespace FindWorkerWeb.WebUI.Controllers
             //IRestResponse response = client.Execute(request);
             //var content = response.Content;
             //var data = JsonConvert.DeserializeObject<Token>(content);
-            Token usertoken=(Token)ApiHelper.Post<Token>("Auth/UserLogin", user);
-            
-            if (usertoken.token!=null)
+            Token usertoken = (Token)ApiHelper.Post<Token>("Auth/UserLogin", user);
+
+            if (usertoken.token != null)
             {
                 //var request1 = new RestRequest("User/GetLoginUser", Method.GET);
                 //request1.AddHeader("Content-Type", "application/json");
@@ -93,24 +99,23 @@ namespace FindWorkerWeb.WebUI.Controllers
                 //IRestResponse response1 = client.Execute(request1);
                 ////var content1 = response1.Content;
                 //var data1 = JsonConvert.DeserializeObject<LoginUserModel>(content1);
-                
-                var userdata=(LoginUserModel)ApiHelper.Get<LoginUserModel>("User/GetLoginUser",token:usertoken.token);
+
+                var userdata = (LoginUserModel)ApiHelper.Get<LoginUserModel>("User/GetLoginUser", token: usertoken.token);
                 HttpContext.Session.SetString("Email", userdata.Email);
                 HttpContext.Session.SetString("RoleId", userdata.RoleId.ToString());
                 HttpContext.Session.SetString("Name", userdata.Name);
 
-
+                return RedirectToAction("UserPanel");
             }
-            
-            
             //var request2 = new RestRequest("Auth/CompanyLogin", Method.POST);
             //request2.AddHeader("Content-Type", "application/json");
             //request2.AddJsonBody(user);
             //IRestResponse response2= client.Execute(request2);
             //var content2 = response2.Content;
             //var data2 = JsonConvert.DeserializeObject<Token>(content2);
-            Token companytoken=(Token)ApiHelper.Post<Token>("Auth/CompanyLogin", user);
-            if (companytoken.token!=null)
+            Token companytoken = (Token)ApiHelper.Post<Token>("Auth/CompanyLogin", user);
+
+            if (companytoken.token != null)
             {
                 //var request3 = new RestRequest("Company/GetLoginUser", Method.GET);
                 //request3.AddHeader("Content-Type", "application/json");
@@ -118,14 +123,20 @@ namespace FindWorkerWeb.WebUI.Controllers
                 //IRestResponse response3 = client.Execute(request3);
                 ////var content3 = response3.Content;
                 //var data3 = JsonConvert.DeserializeObject<LoginCompanyUserModel>(content3);
-                
-                var companydata=(LoginCompanyUserModel)ApiHelper.Get<LoginCompanyUserModel>("Company/GetLoginUser", token: companytoken.token);
+
+                var companydata = (LoginCompanyUserModel)ApiHelper.Get<LoginCompanyUserModel>("Company/GetLoginUser", token: companytoken.token);
                 HttpContext.Session.SetString("CompanyEmail", companydata.CompanyEmail);
                 HttpContext.Session.SetString("RoleId", companydata.RoleId.ToString());
+
+                //return RedirectToAction("CompanyPanel");
             }
-            return Redirect("UserPanel");
+            
+            return RedirectToAction("CompanyPanel");
         }
+
     }
+   
+
     public class Token
     {
         public string token { get; set; }

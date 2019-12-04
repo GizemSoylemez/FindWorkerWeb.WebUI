@@ -24,7 +24,6 @@
     ".NETCoreApp,Version=v3.0": {
       "FindWorkerWeb.WebUI/1.0.0": {
         "dependencies": {
-          "FluentValidation": "8.5.1",
           "Microsoft.AspNetCore.Session": "2.2.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "3.0.0",
           "Microsoft.EntityFrameworkCore.Tools": "3.0.0",
@@ -320,20 +319,6 @@
         },
         "compile": {
           "FindWorkerWeb.WebUI.dll": {}
-        }
-      },
-      "FluentValidation/8.5.1": {
-        "dependencies": {
-          "System.ComponentModel.Annotations": "4.6.0"
-        },
-        "runtime": {
-          "lib/netstandard2.0/FluentValidation.dll": {
-            "assemblyVersion": "8.0.0.0",
-            "fileVersion": "8.5.1.0"
-          }
-        },
-        "compile": {
-          "lib/netstandard2.0/FluentValidation.dll": {}
         }
       },
       "Microsoft.AspNetCore.Cryptography.Internal/2.2.0": {},
@@ -3789,13 +3774,6 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
-    },
-    "FluentValidation/8.5.1": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-GoygZcMkCcve3UHZM3ITSzgrPdfjPSl5mRSQKL6BlV8aI0yi+shIAju7k6QirPESNGsKzn+r4ne0JmqsAGG/PA==",
-      "path": "fluentvalidation/8.5.1",
-      "hashPath": "fluentvalidation.8.5.1.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Cryptography.Internal/2.2.0": {
       "type": "package",
