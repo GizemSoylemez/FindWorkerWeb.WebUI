@@ -5,6 +5,33 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="wwwroot\CompanyPanel\bootstrap.min.css\**" />
+    <Compile Remove="wwwroot\CompanyPanel\demo.css\**" />
+    <Compile Remove="wwwroot\CompanyPanel\fontello.css\**" />
+    <Compile Remove="wwwroot\CompanyPanel\owl.carousel.css\**" />
+    <Compile Remove="wwwroot\CompanyPanel\responsive.css\**" />
+    <Compile Remove="wwwroot\CompanyPanel\style.css\**" />
+    <Content Remove="wwwroot\CompanyPanel\bootstrap.min.css\**" />
+    <Content Remove="wwwroot\CompanyPanel\demo.css\**" />
+    <Content Remove="wwwroot\CompanyPanel\fontello.css\**" />
+    <Content Remove="wwwroot\CompanyPanel\owl.carousel.css\**" />
+    <Content Remove="wwwroot\CompanyPanel\responsive.css\**" />
+    <Content Remove="wwwroot\CompanyPanel\style.css\**" />
+    <EmbeddedResource Remove="wwwroot\CompanyPanel\bootstrap.min.css\**" />
+    <EmbeddedResource Remove="wwwroot\CompanyPanel\demo.css\**" />
+    <EmbeddedResource Remove="wwwroot\CompanyPanel\fontello.css\**" />
+    <EmbeddedResource Remove="wwwroot\CompanyPanel\owl.carousel.css\**" />
+    <EmbeddedResource Remove="wwwroot\CompanyPanel\responsive.css\**" />
+    <EmbeddedResource Remove="wwwroot\CompanyPanel\style.css\**" />
+    <None Remove="wwwroot\CompanyPanel\bootstrap.min.css\**" />
+    <None Remove="wwwroot\CompanyPanel\demo.css\**" />
+    <None Remove="wwwroot\CompanyPanel\fontello.css\**" />
+    <None Remove="wwwroot\CompanyPanel\owl.carousel.css\**" />
+    <None Remove="wwwroot\CompanyPanel\responsive.css\**" />
+    <None Remove="wwwroot\CompanyPanel\style.css\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Session" Version="2.2.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.0.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.0.0">
@@ -18,7 +45,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="wwwroot\CompanyPanel\" />
     <Folder Include="wwwroot\CompanyProfile\" />
     <Folder Include="wwwroot\UserProfile\" />
   </ItemGroup>
