@@ -129,3 +129,6 @@ C:\Users\gizem\Desktop\FindWorkerWeb.WebUI\FindWorkerWeb.WebUI\obj\Debug\netcore
 C:\Users\gizem\Desktop\FindWorkerWeb.WebUI\FindWorkerWeb.WebUI\obj\Debug\netcoreapp3.0\Razor\Views\Company\Index.cshtml.g.cs
 C:\Users\gizem\Desktop\FindWorkerWeb.WebUI\FindWorkerWeb.WebUI\obj\Debug\netcoreapp3.0\Razor\Views\User\Profile.cshtml.g.cs
 C:\Users\gizem\Desktop\FindWorkerWeb.WebUI\FindWorkerWeb.WebUI\obj\Debug\netcoreapp3.0\Razor\Views\Company\Profile.cshtml.g.cs
+C:\Users\gizem\Desktop\FindWorkerWeb.WebUI\FindWorkerWeb.WebUI\obj\Debug\netcoreapp3.0\Razor\Views\User\Cv1.cshtml.g.cs
+C:\Users\gizem\Desktop\FindWorkerWeb.WebUI\FindWorkerWeb.WebUI\obj\Debug\netcoreapp3.0\Razor\Views\User\Cv2.cshtml.g.cs
+C:\Users\gizem\Desktop\FindWorkerWeb.WebUI\FindWorkerWeb.WebUI\obj\Debug\netcoreapp3.0\Razor\Views\User\Cv3.cshtml.g.cs

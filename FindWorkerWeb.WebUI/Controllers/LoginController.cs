@@ -91,7 +91,7 @@ namespace FindWorkerWeb.WebUI.Controllers
             //var data = JsonConvert.DeserializeObject<Token>(content);
             Token usertoken = (Token)ApiHelper.Post<Token>("Auth/UserLogin", user);
 
-            if (usertoken.token != null)
+            if (usertoken.token != null )
             {
                 //var request1 = new RestRequest("User/GetLoginUser", Method.GET);
                 //request1.AddHeader("Content-Type", "application/json");

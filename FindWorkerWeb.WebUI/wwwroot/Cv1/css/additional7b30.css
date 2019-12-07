@@ -1,0 +1,13 @@
+div.custom-check {
+    /* bu olmazsa registration formda hata mesajıyla sözleşmeyi onaylıyorum checkbox bir birine giriyor */
+    overflow: auto;
+}
+
+.help-content ul, .help-content p {
+    margin-bottom: .5em;
+}
+
+.help-content li {
+    list-style: square;
+    margin-left: 1.5em;
+}

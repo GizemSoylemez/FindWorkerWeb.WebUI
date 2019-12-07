@@ -46,6 +46,9 @@
 
   <ItemGroup>
     <Folder Include="wwwroot\CompanyProfile\" />
+    <Folder Include="wwwroot\Cv1\" />
+    <Folder Include="wwwroot\Cv2\" />
+    <Folder Include="wwwroot\Cv3\" />
     <Folder Include="wwwroot\UserProfile\" />
   </ItemGroup>
 

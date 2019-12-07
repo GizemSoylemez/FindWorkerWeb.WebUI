@@ -20,6 +20,18 @@ namespace FindWorkerWeb.WebUI.Controllers
         {
             return View();
         }
-       
+
+        public IActionResult Cv1()
+        {
+            return View();
+        }
+        public IActionResult Cv2()
+        {
+            return View();
+        }
+        public IActionResult Cv3()
+        {
+            return View();
+        }
     }
 }
