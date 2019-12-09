@@ -33,5 +33,9 @@ namespace FindWorkerWeb.WebUI.Controllers
         {
             return View();
         }
+        public IActionResult Message()
+        {
+            return View();
+        }
     }
 }

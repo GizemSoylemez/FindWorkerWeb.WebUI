@@ -55,7 +55,16 @@
                                     >Profilim</a>
                         
                     </li>
-                    <li><a href="/messages">Mesajlar</a></li>
+                    <li><a @if (Context.Session.GetString("RoleId") == "1")
+                                    {
+                                        @Html.ActionLink("","Message","User")
+    
+                                    }
+
+                                    @if (Context.Session.GetString("RoleId") == "2")
+                                    {
+                                         @Html.ActionLink("", "Message", "Company")
+                                     }>Mesajlar</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li class="dropdown">
@@ -68,10 +77,8 @@
                         </a>
                         
                         <ul role="menu" class="dropdown-menu">
-                            <li><a href="/profile">Profilimi Göster</a></li>
-                            <li><a href="/profile/edit">Profilimi Düzenle</a></li>
+                         
                             <li class="divider"></li>
-                            <li><a href="/settings/password">Ayarlar</a></li>
                             <li><a href="/Home/CikisYap">Çıkış</a></li>
                         </ul>
                     </li>

@@ -8441,11 +8441,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\gizem\\Desktop\\FindWorkerWeb.WebUI\\FindWorkerWeb.WebUI\\FindWorkerWeb.WebUI.csproj",
+      "projectUniqueName": "C:\\Users\\gizem\\Desktop\\Web Projesi\\FindWorkerWeb.WebUI\\FindWorkerWeb.WebUI\\FindWorkerWeb.WebUI.csproj",
       "projectName": "FindWorkerWeb.WebUI",
-      "projectPath": "C:\\Users\\gizem\\Desktop\\FindWorkerWeb.WebUI\\FindWorkerWeb.WebUI\\FindWorkerWeb.WebUI.csproj",
+      "projectPath": "C:\\Users\\gizem\\Desktop\\Web Projesi\\FindWorkerWeb.WebUI\\FindWorkerWeb.WebUI\\FindWorkerWeb.WebUI.csproj",
       "packagesPath": "C:\\Users\\gizem\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\gizem\\Desktop\\FindWorkerWeb.WebUI\\FindWorkerWeb.WebUI\\obj\\",
+      "outputPath": "C:\\Users\\gizem\\Desktop\\Web Projesi\\FindWorkerWeb.WebUI\\FindWorkerWeb.WebUI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

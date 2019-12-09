@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography;
+using System.Text;
 using System.Threading.Tasks;
 using FindWorkerWeb.WebUI.Helper;
 using FindWorkerWeb.WebUI.Models;
@@ -55,6 +57,7 @@ namespace FindWorkerWeb.WebUI.Controllers
 
                 return Redirect("/");
             }
+
             return View();
         }
         public IActionResult CompanyRegister([FromForm] CompanyModel company)
@@ -141,4 +144,18 @@ namespace FindWorkerWeb.WebUI.Controllers
     {
         public string token { get; set; }
     }
+
+    /*public string MD5Olustur(string input)
+    {
+        MD5 md5Hasher = MD5.Create();
+        byte[] data = md5Hasher.ComputeHash(Encoding.Default.GetBytes(input));
+        StringBuilder sBuilder = new StringBuilder();
+        for (int i = 0; i & lt; data.Length; i++)
+    {
+            sBuilder.Append(data[i].ToString("x2"));
+        }
+        return sBuilder.ToString();
+    }*/
+
+   
 }
