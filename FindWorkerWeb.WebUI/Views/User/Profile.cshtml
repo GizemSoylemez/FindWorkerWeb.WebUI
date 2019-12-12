@@ -32,6 +32,26 @@
                 <header class="header theiaStickySidebar">
                     <div class="profile-img">
                         <img src="~/UserProfile/img/img-profile.jpg" class="img-responsive" alt="" />
+                        <div class="popup photo-upload">
+                            <div class="popup-title"></div>
+                            <div class="popup-content">
+                                <div class="photo-action">
+                                    <div class="photo-upload-btn">
+                                        <input name="file" id="photo-upload-submit" type="file" class="cloudinary-fileupload photo hidden-file" data-form-data='{"upload_preset": "userphoto"}' accept="image/jpeg, image/png" data-cloudinary-field="image_id">
+                                    </div>
+                                    <div class="photo-delete-block">
+                                        <span class="or">ya da</span>
+                                        <span class="remove-photo">Fotoğrafı sil</span>
+                                    </div>
+                                   
+                                </div>
+                                
+                            </div>
+                            <div class="popup-action">
+                                <button type="button" id="user-photo-accept" class="popup-accept">Uygula</button>
+                                <button type="button" id="user-photo-cancel" class="popup-cancel">İptal</button>
+                            </div>
+                        </div>
                     </div>
                     <div class="content">
                         <div class="line">
@@ -255,6 +275,7 @@
                         <div class="container-fluid">
                             <div class="row">
                                 <div class="col-md-12">
+
                                     <div class="section-title"><h2>İş Deneyimleri</h2></div>
                                 </div>
                             </div>
@@ -264,6 +285,7 @@
                                     <div class="content-item">
 
                                         <div class="line">
+                                           
                                             <div class="value placeholder" contenteditable="true">2019-2020</div>
                                             <div class="field placeholder" contenteditable="true"><h3>Amazon</h3></div>
                                             <div class="value placeholder" contenteditable="true">Developer</div>
@@ -520,6 +542,23 @@
                         </div>
                     </div>
 
+                    <div class="selection" style="top: 343px; left: 563.5px; width: 392px; height: 173px; display: block;">
+                        <div id="tour4" class="selection-right">
+                            <ul>
+                                <li class="active" data-event="delete" data-type="paragraph" data-col="0" data-pageindex="0"><i class="delete-icon sprite"></i><span>Paragrafı Sil</span></li>
+                                <li class="active" data-event="add" data-type="paragraph" data-col="0" data-pageindex="0"><i class="add-icon sprite"></i><span>Paragraf Ekle</span></li>
+                                <li class="active" data-event="edit" data-type="paragraph" data-col="0" data-pageindex="0"><i class="edit-icon sprite"></i><span>Türünü Değiştir</span></li>
+                            </ul>
+                            <div id="tour5" class="selection-left">
+                                <ul>
+                                    <li class="passive" data-event="up" data-type="paragraph" data-col="0" data-pageindex="0"><i class="up"></i></li>
+                                    <li class="active" data-event="down" data-type="paragraph" data-col="0" data-pageindex="0"><i class="down"></i></li>
+                                    <li class="seperator passive" data-event="left" data-type="paragraph" data-col="0" data-pageindex="0"><i class="left"></i></li>
+                                    <li class="active" data-event="right" data-type="paragraph" data-col="0" data-pageindex="0"><i class="right"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                     <script data-cfasync="false" src="../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
                     <script src="/UserProfile/js/jquery-2.1.4.min.js" type="e757cce0a3cddc60662fb534-text/javascript"></script>
 
@@ -527,6 +566,51 @@
                     <script src="/UserProfile/js/theia-sticky-sidebar.js" type="e757cce0a3cddc60662fb534-text/javascript"></script>
                     <script src="/UserProfile/js/scripts.js" type="e757cce0a3cddc60662fb534-text/javascript"></script>
                     <script src="../../../../ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js" data-cf-settings="e757cce0a3cddc60662fb534-|49" defer=""></script>
+
+                    <script>
+                        var trans = {
+                            cv_index_saveErrorMessage: "Kayıt esnasında bir hata oluştu. Lütfen tekrar deneyiniz.",
+                            cv_index_or: "ya da",
+                            cv_document_addPageNumber: "Sayfa numarası ekle",
+                            cv_document_removePageNumber: "Sayfa numarasını kaldır",
+                            cv_document_addPhoto: "Fotoğraf ekle",
+                            cv_document_removePhoto: "Fotoğrafı kaldır",
+                            cv_document_deletePhoto: "Fotoğrafı sil",
+                            cv_document_uploadPhoto: "Fotoğraf yükle",
+                            cv_document_changePhoto: "Fotoğrafı değiştir",
+                            cv_document_cropPhoto: "Fotoğrafı Kırp",
+                            cv_document_page: "Sayfa",
+                            cv_document_deleteParagraph: "Paragrafı Sil",
+                            cv_document_addParagraph: "Paragraf Ekle",
+                            cv_document_addLine: "Satır ekle",
+                            cv_document_deleteLine: "Satır sil",
+                            cv_document_changeType: "Türünü Değiştir",
+                            cv_document_missingParagraphType: "Paragraf türünü seçiniz",
+                            cv_document_relationshipMarried: "Evli",
+                            cv_document_relationshipSingle: "Bekar",
+                            cv_settingsView_loading: "Yükleniyor...",
+                            cv_settingsView_zipcarErrorMessage: "Kod alınırken bir hata oluştu. Lütfen tekrar deneyiniz",
+                            cv_settingsView_validCardNumber: "Geçersiz kart numarası",
+                            cv_settingsView_validCardMonth: "Geçersiz son kullanma tarihi",
+                            cv_settingsView_validCardCvc: "Geçersiz güvenlik kodu",
+                            cv_settingsView_valid_sales_agreement: "cv_settingsView_valid_sales_agreement",
+                            cv_settingsView_processing: "İşlem yapılıyor",
+                        };
+                        var routes = {
+                            homepage: "/tr/",
+                            app_cv_new: "/cv-new",
+                            app_cv_save: "/cv/save",
+                            app_cv_save_pdf: "/cv/save-pdf",
+                            app_cv_save_from_session: "/my/cv/save-from-session"
+                        };
+
+                        var configurations = {
+                            fb_connect_scope: "public_profile,user_birthday,user_hometown,user_location,email,user_friends,user_likes",
+                            fb_connect_fields: "id,name,first_name,last_name,picture,gender,age_range,birthday,relationship_status,about,email,website,location,hometown,education,languages,favorite_teams,work"
+                        };
+                    </script>
+                    <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
+                    <script type="text/javascript" src="~/Cv1/js/compiled/min-912f9bb.js"></script>
 </body>
 
 <!-- Mirrored from uicookies.com/demo/theme/resumex/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 03 Dec 2019 13:41:16 GMT -->

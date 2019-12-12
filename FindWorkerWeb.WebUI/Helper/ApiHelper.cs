@@ -10,7 +10,7 @@ namespace FindWorkerWeb.WebUI.Helper
     
     public static class ApiHelper
     {
-        static string BASEURL= "http://172.20.10.3/api/";
+        static string BASEURL= "http://172.20.10.8/api/";
 
         public static object Post(string resource, object model,string token = "")
         {

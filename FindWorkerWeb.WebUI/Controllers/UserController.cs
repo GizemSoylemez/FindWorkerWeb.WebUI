@@ -33,7 +33,15 @@ namespace FindWorkerWeb.WebUI.Controllers
         {
             return View();
         }
-        public IActionResult Message()
+        public IActionResult ExampleCv1()
+        {
+            return View();
+        }
+        public IActionResult ExampleCv2()
+        {
+            return View();
+        }
+        public IActionResult ExampleCv3()
         {
             return View();
         }
