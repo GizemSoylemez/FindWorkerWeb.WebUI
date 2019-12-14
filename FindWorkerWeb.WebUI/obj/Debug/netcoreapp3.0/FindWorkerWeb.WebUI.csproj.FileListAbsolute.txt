@@ -403,3 +403,4 @@ C:\Users\gizem\Desktop\Web Projesi\FindWorkerWeb.WebUI\FindWorkerWeb.WebUI\obj\D
 C:\Users\gizem\Desktop\Web Projesi\FindWorkerWeb.WebUI\FindWorkerWeb.WebUI\obj\Debug\netcoreapp3.0\Razor\Views\User\ExampleCv1.cshtml.g.cs
 C:\Users\gizem\Desktop\Web Projesi\FindWorkerWeb.WebUI\FindWorkerWeb.WebUI\obj\Debug\netcoreapp3.0\Razor\Views\User\ExampleCv2.cshtml.g.cs
 C:\Users\gizem\Desktop\Web Projesi\FindWorkerWeb.WebUI\FindWorkerWeb.WebUI\obj\Debug\netcoreapp3.0\Razor\Views\User\ExampleCv3.cshtml.g.cs
+C:\Users\gizem\Desktop\Web Projesi\FindWorkerWeb.WebUI\FindWorkerWeb.WebUI\obj\Debug\netcoreapp3.0\FindWorkerWeb.WebUI.csprojAssemblyReference.cache

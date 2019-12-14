@@ -10,7 +10,7 @@ namespace FindWorkerWeb.WebUI.Helper
     
     public static class ApiHelper
     {
-        static string BASEURL= "http://172.20.10.8/api/";
+        static string BASEURL= "http://192.168.1.82/api/";
 
         public static object Post(string resource, object model,string token = "")
         {
@@ -23,6 +23,7 @@ namespace FindWorkerWeb.WebUI.Helper
             }
             request.AddJsonBody(model);
             IRestResponse response = client.Execute(request);
+
             return response;
         }
         public  static object Post<T>(string resource,object model=null,string token="") where T : class
