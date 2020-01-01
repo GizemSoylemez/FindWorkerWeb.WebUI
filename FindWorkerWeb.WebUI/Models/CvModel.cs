@@ -15,9 +15,9 @@ namespace FindWorkerWeb.WebUI.Models
         public string Document { get; set; }
         public List<string> Reference { get; set; }
         public string Language { get; set; }
-        public string Contact { get; set; }
-        public string Hobby { get; set; }
+        public List<string> Contact { get; set; }
+        public List<string> Hobby { get; set; }
         public string Location { get; set; }
-        public string WorkExperience { get; set; }
+        public List<string> WorkExperience { get; set; }
     }
 }

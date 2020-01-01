@@ -107,6 +107,8 @@ namespace FindWorkerWeb.WebUI.Controllers
                 HttpContext.Session.SetString("Email", userdata.Email);
                 HttpContext.Session.SetString("RoleId", userdata.RoleId.ToString());
                 HttpContext.Session.SetString("Name", userdata.Name);
+                HttpContext.Session.SetString("Id", userdata.Id.ToString());
+
 
                 return RedirectToAction("UserPanel");
             }

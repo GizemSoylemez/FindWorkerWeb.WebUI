@@ -1,4 +1,5 @@
-﻿@{
+﻿@using Microsoft.AspNetCore.Http;
+@{
     ViewData["Title"] = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
@@ -63,7 +64,7 @@
                             <div class="line">
 
                                 <div class="field placeholder" contenteditable="true">Ad Soyad</div>
-                                <div class="value placeholder" contenteditable="true" id="ad">Beyda</div>
+                                <div class="value placeholder" contenteditable="true" id="ad"> @Context.Session.GetString("Name")</div>
                             </div>
                             <div class="line">
 
@@ -93,16 +94,15 @@
                             <div class="container-fluid" name="Project">
                                 <div class="row">
                                     <div class="col-md-12">
-                                        <div class="line">
-
-                                            <div class="field placeholder" contenteditable="true">PROJELER</div>
-
+                                        <div class="section-title">
+                                            <h2>Projeler</h2>
                                         </div>
                                     </div>
                                 </div>
 
                                 <div class="row">
-                                    <textarea style="margin: 0px; width: 674px; height: 111px;"></textarea>
+                                    <button type="button" id="projects">New Line</button>
+                                    <div class="projects"></div>
                                 </div>
 
                             </div>
@@ -113,24 +113,16 @@
                                 <div class="row">
                                     <div class="col-md-12">
                                         <div class="section-title">
-                                            <div class="line">
-
-                                                <div class="field placeholder" contenteditable="true">Yetenekler</div>
+                                            <div class="section-title">
+                                                <h2>Yetenekler</h2>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="col-md-12">
-                                        <div class="progress-wrapper">
-
-                                            <textarea style="margin: 0px; width: 674px; height: 111px;"></textarea>
-
-                                        </div>
-
-                                    </div>
+                                    <button type="button" id="skills">New Line</button>
+                                    <div class="skills"></div>
                                 </div>
-
                             </div>
 
                         </section>
@@ -145,13 +137,8 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="col-md-12">
-                                        <div class="progress-wrapper">
-
-                                            <textarea style="margin: 0px; width: 674px; height: 111px;"></textarea>
-
-                                        </div>
-                                    </div>
+                                    <button type="button" id="languages">New Line</button>
+                                    <div class="languages"></div>
                                 </div>
                             </div>
                         </section>
@@ -167,36 +154,9 @@
 
                                 <div class="row">
                                     <div class="col-md-12">
-                                        <div class="content-item">
 
-                                            <div class="line">
-
-                                                <div class="value placeholder" contenteditable="true">2019-2020</div>
-                                                <div class="field placeholder" contenteditable="true"><h3>Amazon</h3></div>
-                                                <div class="value placeholder" contenteditable="true">Developer</div>
-
-
-                                            </div>
-                                        </div>
-
-                                        <div class="content-item">
-                                            <div class="line">
-                                                <div class="value placeholder" contenteditable="true">2012-2016</div>
-                                                <div class="field placeholder" contenteditable="true"><h3>Facebook</h3></div>
-                                                <div class="value placeholder" contenteditable="true">Developer</div>
-
-                                            </div>
-                                        </div>
-
-                                        <div class="content-item">
-                                            <div class="line">
-                                                <div class="value placeholder" contenteditable="true">2010-2012</div>
-                                                <div class="field placeholder" contenteditable="true"><h3>Google</h3></div>
-                                                <div class="value placeholder" contenteditable="true">Developer</div>
-
-
-                                            </div>
-                                        </div>
+                                        <button type="button" id="experiences">New Line</button>
+                                        <div class="experiences"></div>
 
                                     </div>
                                 </div>
@@ -212,32 +172,11 @@
                                         <div class="section-title"><h2>Eğitim</h2></div>
                                     </div>
                                 </div>
-
                                 <div class="row">
                                     <div class="col-md-12">
-                                        <div class="content-item">
-                                            <div class="line">
 
-                                                <div class="field placeholder" contenteditable="true"><h3>CBÜ</h3></div>
-                                                <div class="value placeholder" contenteditable="true">Yazılım</div>
-                                                <div class="value placeholder" contenteditable="true">Turgutlu</div>
-
-                                            </div>
-                                        </div>
-
-                                        <div class="content-item">
-                                            <div class="line">
-
-                                                <div class="field placeholder" contenteditable="true"><h3>ŞOHYAL</h3></div>
-                                                <div class="value placeholder" contenteditable="true">Anadolu Lisesi</div>
-                                                <div class="value placeholder" contenteditable="true">Bursa</div>
-
-                                            </div>
-                                        </div>
-
-                                        <div class="content-item">
-
-                                        </div>
+                                        <button type="button" id="educations">New Line</button>
+                                        <div class="educations"></div>
 
                                     </div>
                                 </div>
@@ -245,7 +184,8 @@
                             </div>
 
                         </section>
-                        <section class="section-wrapper section-interest gray-bg">
+
+                        <section class="section-contact section-wrapper gray-bg">
                             <div class="container-fluid" name="Document">
                                 <div class="row">
                                     <div class="col-md-12">
@@ -257,10 +197,11 @@
 
                                 <div class="row">
                                     <div class="col-md-12">
-                                        <textarea style="margin: 0px; width: 674px; height: 111px;"></textarea>
+                                        <button type="button" id="documents">New Line</button>
+                                        <div class="documents"></div>
+
                                     </div>
                                 </div>
-
                             </div>
                         </section>
 
@@ -276,7 +217,8 @@
 
                                 <div class="row">
                                     <div class="col-md-12">
-                                        <textarea style="margin: 0px; width: 674px; height: 111px;"></textarea>
+                                        <button type="button" id="hobbies">New Line</button>
+                                        <div class="hobbies"></div>
                                     </div>
                                 </div>
 
@@ -295,41 +237,9 @@
 
                                 <div class="row">
                                     <div class="col-md-12">
-                                        <address>
-                                            <div class="line">
-                                                <div class="field placeholder" contenteditable="true"><strong>Adres</strong></div>
-                                                <div class="value placeholder" contenteditable="true">Beyda</div>
-                                                <div class="value placeholder" contenteditable="true">Beyda</div>
+                                        <button type="button" id="contacts">New Line</button>
+                                        <div class="contacts"></div>
 
-                                            </div>
-                                        </address>
-                                        <address>
-                                            <div class="line">
-
-                                                <div class="field placeholder" contenteditable="true"><strong>Adres</strong></div>
-                                                <div class="value placeholder" contenteditable="true">Beyda</div>
-
-
-                                            </div>
-                                        </address>
-                                        <address>
-                                            <div class="line">
-
-                                                <div class="field placeholder" contenteditable="true"><strong>Telefon</strong></div>
-                                                <div class="value placeholder" contenteditable="true">Beyda</div>
-
-                                            </div>
-                                        </address>
-                                        <address>
-                                            <div class="line">
-
-                                                <div class="field placeholder" contenteditable="true"><strong>Email</strong></div>
-                                                <div class="value placeholder" contenteditable="true">Beyda</div>
-
-
-                                            </div>
-                                            <a href="https://uicookies.com/cdn-cgi/l/email-protection#efcc"><span class="__cf_email__" data-cfemail="1b78747d7d7e7e5b7a767e77727e35767e">[email&#160;protected]</span></a>
-                                        </address>
                                     </div>
                                 </div>
                             </div>
@@ -345,9 +255,8 @@
 
                                 <div class="row">
                                     <div class="col-md-12">
-
-                                        <button type="button" id="newLine">New Line</button>
-                                        <div class="referanslar"></div>
+                                        <button type="button" id="references">New Line</button>
+                                        <div class="references"></div>
 
                                     </div>
                                 </div>
@@ -359,55 +268,96 @@
 
                         <div class="document-actions">
 
-                            <div class="form-group"><label asp-for="CvName" class=" form-control-label"> Name</label><input asp-for="CvName" type="text" id="CvName" name="CvName" placeholder="Name" class="form-control"></div>
-                            <input asp-controller="User" asp-action="CvData" class="btn btn-success" type="submit" value="Submit" id="save">
+                            <div class="form-group"><label asp-for="CvName" class=" form-control-label"> Name</label><input asp-for="CvName" type="text" id="CvName" name="CvName" placeholder="CV İsminiz.." class="form-control"></div>
+                            <input asp-controller="User" asp-action="CvData" class="btn btn-md btn-primary m-0 px-3 " type="submit" value="Submit" id="save">
 
 
 
                         </div>
 
 
-                        <div id="cookie-banner" class="cookie-banner">
-                            <div class="document-actions">
-                                <div class="wrapper">
-                                    <button type="button" id="update" class="pda-button">
-                                        <i class="save-icon sprite">
 
-                                        </i> Güncelle
-                                    </button>
-                                </div>
+                        <div class="document-actions">
+                            <button type="button" id="update" class="btn btn-md btn-primary m-0 px-3">
+                                <i class="save-icon sprite">
 
-
-                            </div>
+                                </i> Güncelle
+                            </button>
                         </div>
+                    </div>
 
-                        <div class="selection" style="top: 343px; left: 563.5px; width: 392px; height: 173px; display: block;">
-                            <div id="tour4" class="selection-right">
-                                <ul>
-                                    <li class="active" data-event="delete" data-type="paragraph" data-col="0" data-pageindex="0"><i class="delete-icon sprite"></i><span>Paragrafı Sil</span></li>
-                                    <li class="active" data-event="add" data-type="paragraph" data-col="0" data-pageindex="0"><i class="add-icon sprite"></i><span>Paragraf Ekle</span></li>
-                                    <li class="active" data-event="edit" data-type="paragraph" data-col="0" data-pageindex="0"><i class="edit-icon sprite"></i><span>Türünü Değiştir</span></li>
-                                </ul>
-                                <div id="tour5" class="selection-left">
-                                    <ul>
-                                        <li class="passive" data-event="up" data-type="paragraph" data-col="0" data-pageindex="0"><i class="up"></i></li>
-                                        <li class="active" data-event="down" data-type="paragraph" data-col="0" data-pageindex="0"><i class="down"></i></li>
-                                        <li class="seperator passive" data-event="left" data-type="paragraph" data-col="0" data-pageindex="0"><i class="left"></i></li>
-                                        <li class="active" data-event="right" data-type="paragraph" data-col="0" data-pageindex="0"><i class="right"></i></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
+                </div>
+            </div>
+        </div>
     </form>
     <script>
-        $("#newLine").click(function () {
+        $("#references").click(function () {
 
-             $(".referanslar").append("<input type='text' name='Reference' />");
-            
+            $(".references").append("<input type='text' width='30px'  placeholder='Referans Adı' name='ReferenceName' />");
+            $(".references").append("<input type='text' width='30px'  placeholder='Referans Email' name='ReferencePhone' /><br/>");
+            $(".references").append("<input type='text' width='30px'  placeholder='Referans Telefon' name='ReferenceEmail' />");
+            $(".references").append("<input type='text' width='30px'  placeholder='Referans Pozisyonu' name='ReferencePosition' /><br/>");
+
+
         });
-    </script>
-   
+        $("#contacts").click(function () {
 
+            $(".contacts").append("<input type='text' placeholder='İleşim Adı' name='ContactName' />");
+            $(".contacts").append("<input type='text' placeholder='Bilgi' name='Decription' /><br/>");
+
+
+
+        });
+        $("#educations").click(function () {
+
+            $(".educations").append("<input type='text'  width: 100px placeholder='Okul Adı' name='SchoolName' />");
+            $(".educations").append("<input type='text'  width: 100px placeholder='Mezuniyet Tarihi' name='GruadetDate' /><br/>");
+            $(".educations").append("<input type='text'  width: 100px placeholder='Okul Tipi' name='SchoolType' />");
+            $(".educations").append("<input type='text'  width: 100px placeholder='Bölüm' name='Department' /><br/>");
+
+
+
+        });
+        $("#experiences").click(function () {
+
+            $(".experiences").append("<input type='text' placeholder='Şirket Adı' name='CompanyName' />");
+            $(".experiences").append("<input type='text' placeholder='Pozisyon' name='Position' /><br/>");
+            $(".experiences").append("<input type='text' placeholder='Çalışma Süresi'name='WorkedTime' />");
+            $(".experiences").append("<input type='text' placeholder='Açıklama'name='Description' /><br/>");
+        });
+
+        $("#projects").click(function () {
+
+            $(".projects").append("<input type='text'  size='25' placeholder='Proje Adı'  name='ProjectName'/> <br/>");
+        });
+
+
+        $("#skills").click(function () {
+
+            $(".skills").append("<input type='text' placeholder='Yetenek Adı'  name='SkillName'/>");
+            $(".skills").append("<input type='text' placeholder='Yetenek Seviyesi'  name='SkillName'/><br/>");
+        });
+
+        $("#languages").click(function () {
+
+            $(".languages").append("<input type='text' placeholder='Yabancı Dil Adı'  name='LanguageName'/>");
+            $(".languages").append("<input type='text' placeholder='Yabancı Dil Seviyesi'  name='LanguageLevel'/><br/>");
+        });
+
+        $("#hobbies").click(function () {
+
+            $(".hobbies").append("<input type='text' placeholder='Hobi Adı '  name='HobbiesName '/><br/>");
+
+        });
+
+        $("#documents").click(function () {
+
+            $(".documents").append("<input type='text' placeholder='Sertifika Adı'  name=' DocumentationName'/>");
+            $(".documents").append("<input type='text' placeholder='Açıklama'  name='DocumentDate'/><br/>");
+        });
+
+
+    </script>
     <script data-cfasync="false" src="../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
     <script src="/UserProfile/js/jquery-2.1.4.min.js" type="e757cce0a3cddc60662fb534-text/javascript"></script>
 

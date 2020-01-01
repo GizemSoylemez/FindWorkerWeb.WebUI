@@ -473,5 +473,10 @@ button:focus,
     left: 0;
     margin: 0;
     text-align: center;
-    top: 65%
+    top:ult 65%
+}
+.defaultInput {
+    width: 100px;
+    height: 25px;
+    padding: 5px;
 }
