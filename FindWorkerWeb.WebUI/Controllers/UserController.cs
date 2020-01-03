@@ -103,7 +103,8 @@ namespace FindWorkerWeb.WebUI.Controllers
                 response.CompanyName = experienceModel.CompanyName[i];
                 response.Description = experienceModel.Description[i];
                 response.Position = experienceModel.Position[i];
-                response.WorkedTime = experienceModel.WorkedTime[i];
+                response.WorkFinishTime = experienceModel.WorkFinishTime[i];
+                response.WorkStartTime = experienceModel.WorkStartTime[i];
                 response.UserId = Convert.ToInt32(userdata);
                 experienceList.Add(response);
 
