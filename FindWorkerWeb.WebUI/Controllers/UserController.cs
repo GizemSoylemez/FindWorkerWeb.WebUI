@@ -18,7 +18,7 @@ namespace FindWorkerWeb.WebUI.Controllers
             return View();
         }
       
-        public IActionResult Profile([FromForm] CvModel cv)
+        public IActionResult Profile()
         {
           
             return View();

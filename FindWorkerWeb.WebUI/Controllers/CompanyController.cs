@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using FindWorkerWeb.WebUI.Helper;
+using FindWorkerWeb.WebUI.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace FindWorkerWeb.WebUI.Controllers
@@ -20,5 +22,13 @@ namespace FindWorkerWeb.WebUI.Controllers
         {
             return View();
         }
+
+        public IActionResult CvList()
+        {
+
+            var response = ApiHelper.Get<CvModel>("CvData/GetCvData",model:null);
+            return View("CvList",response);
+        }
     }
+
 }

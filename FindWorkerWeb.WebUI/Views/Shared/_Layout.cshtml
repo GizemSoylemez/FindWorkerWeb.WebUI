@@ -51,8 +51,8 @@
 
                         @if (Context.Session.GetString("RoleId") == "2")
                         {
-                            <a href="~/Company/Profile">Profilim</a>
-
+                           // <a href="~/Company/Profile">Profilim</a>
+                           <a @Html.ActionLink("","Profile","Company")>Profilim</a>
 
                         }
 

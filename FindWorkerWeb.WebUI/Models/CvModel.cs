@@ -9,15 +9,15 @@ namespace FindWorkerWeb.WebUI.Models
     {
         public int Id { get; set; }
         public string CvName { get; set; }
-        public List<string> Education { get; set; }
-        public string Project { get; set; }
-        public string Skill { get; set; }
-        public string Document { get; set; }
-        public List<string> Reference { get; set; }
-        public string Language { get; set; }
-        public List<string> Contact { get; set; }
-        public List<string> Hobby { get; set; }
-        public string Location { get; set; }
-        public List<string> WorkExperience { get; set; }
+        public List<EducationModel> Education { get; set; }
+        public List<ProjectModel> Project { get; set; }
+        public List<SkillModel> Skill { get; set; }
+        public List<DocumentModel> Document { get; set; }
+        public List<ReferenceModel> Reference { get; set; }
+        public List<LanguageModel> Language { get; set; }
+        public List<ContactModel> Contact { get; set; }
+        public List<HobbyModel> Hobby { get; set; }
+        public List<LocationModel> Location { get; set; }
+        public List<WorkExperienceModel> WorkExperience { get; set; }
     }
 }

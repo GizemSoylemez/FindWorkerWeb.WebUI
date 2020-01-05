@@ -1,0 +1,48 @@
+﻿@model List<FindWorkerWeb.WebUI.Models.CvModel>
+    @{
+        ViewData["Title"] = "CvList";
+        Layout = "~/Views/Shared/_Layout.cshtml";
+
+    }
+
+
+    <!DOCTYPE HTML>
+    <html>
+    <head>
+      
+    </head>
+    <body class="homepage">
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header">
+                        <strong class="card-title">Cv</strong>
+                    </div>
+                    <div class="card-body">
+                        <table id="bootstrap-data-table" class="table table-striped table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>Cv Name</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model)
+                                {
+                                <tr>
+
+
+                                    <td>@item.CvName</td>
+                                    <td>@item.Id</td>
+
+                                </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </body>
+</html>

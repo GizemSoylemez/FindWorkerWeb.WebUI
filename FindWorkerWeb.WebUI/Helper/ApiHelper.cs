@@ -60,7 +60,20 @@ namespace FindWorkerWeb.WebUI.Helper
             var data = JsonConvert.DeserializeObject<T>(content);
             return data;
         }
+        public static object Get(string resource, object model, string token = "")
+        {
+            var client = new RestClient(BASEURL); ;
+            var request = new RestRequest(resource, Method.GET);
+            request.AddHeader("Content-Type", "application/json");
+            if (!String.IsNullOrEmpty(token))
+            {
+                request.AddHeader("Authorization", "bearer " + token);
+            }
+            request.AddJsonBody(model);
+            IRestResponse response = client.Execute(request);
 
+            return response;
+        }
 
     }
 }

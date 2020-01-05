@@ -680,3 +680,4 @@ C:\Users\gizem\Desktop\Web\FindWorkerWeb.WebUI\FindWorkerWeb.WebUI\obj\Debug\net
 C:\Users\gizem\Desktop\Web\FindWorkerWeb.WebUI\FindWorkerWeb.WebUI\obj\Debug\netcoreapp3.0\FindWorkerWeb.WebUI.dll
 C:\Users\gizem\Desktop\Web\FindWorkerWeb.WebUI\FindWorkerWeb.WebUI\obj\Debug\netcoreapp3.0\FindWorkerWeb.WebUI.pdb
 C:\Users\gizem\Desktop\Web\FindWorkerWeb.WebUI\FindWorkerWeb.WebUI\obj\Debug\netcoreapp3.0\FindWorkerWeb.WebUI.csprojAssemblyReference.cache
+C:\Users\gizem\Desktop\Web\FindWorkerWeb.WebUI\FindWorkerWeb.WebUI\obj\Debug\netcoreapp3.0\Razor\Views\Company\CvList.cshtml.g.cs
