@@ -1,4 +1,4 @@
-﻿@model List<FindWorkerWeb.WebUI.Models.CvModel>
+﻿@model List<FindWorkerWeb.WebUI.Models.CvDataModel>
     @{
         ViewData["Title"] = "CvList";
         Layout = "~/Views/Shared/_Layout.cshtml";
@@ -33,7 +33,6 @@
 
 
                                     <td>@item.CvName</td>
-                                    <td>@item.Id</td>
 
                                 </tr>
                                 }

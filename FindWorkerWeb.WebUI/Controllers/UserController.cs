@@ -50,7 +50,7 @@ namespace FindWorkerWeb.WebUI.Controllers
         }
 
         [HttpPost]
-        public IActionResult CVData([FromForm] ProjectModel projectModel ,DocumentModel documentModel,ContactModel contactModel, EducationModel educationModel,HobbyModel hobbyModel,LanguageModel languageModel,LocationModel locationModel,ReferenceModel referenceModel,SkillModel skillModel,WorkExperienceModel experienceModel)
+        public IActionResult CVData([FromForm] ProjectModel projectModel , CvDataModel cvdatamodel, DocumentModel documentModel,ContactModel contactModel, EducationModel educationModel,HobbyModel hobbyModel,LanguageModel languageModel,LocationModel locationModel,ReferenceModel referenceModel,SkillModel skillModel,WorkExperienceModel experienceModel)
         {
             var userdata = HttpContext.Session.GetString("Id");
             List<EducationModelProperty> educationList = new List<EducationModelProperty>();
@@ -62,6 +62,18 @@ namespace FindWorkerWeb.WebUI.Controllers
             List<DocumentModelProperty> documentList = new List<DocumentModelProperty>();
             List<SkillModelProperty> skillList = new List<SkillModelProperty>();
             List<HobbyModelProperty> hobbyList = new List<HobbyModelProperty>();
+            List<CvDataModelProperty> cvdataList = new List<CvDataModelProperty>();
+
+            for(int i =0; i < cvdatamodel.CvName.Count; i++)
+            {
+                CvDataModelProperty response = new CvDataModelProperty();
+                response.CvName = cvdatamodel.CvName[i];
+                response.UserId = Convert.ToInt32(userdata);
+                cvdataList.Add(response);
+                ApiHelper.Post("CvData/AddCv", response);
+
+            }
+
             for (int i = 0; i < educationModel.SchoolName.Count; i++)
             {
 

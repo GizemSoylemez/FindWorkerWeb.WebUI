@@ -267,8 +267,8 @@
                         </section>
 
                         <div class="document-actions">
-
-                            <div class="form-group"><label asp-for="CvName" class=" form-control-label"> Name</label><input asp-for="CvName" type="text" id="CvName" name="CvName" placeholder="CV İsminiz.." class="form-control"></div>
+                            @Model.CvData
+                            <div class="form-group"><label asp-for= "CvData" class=" form-control-label"> Name</label><input asp-for="CvData" type="text" id="CvName" name="CvName" placeholder="CV İsminiz.." class="form-control"></div>
                             <input asp-controller="User" asp-action="CvData" class="btn btn-md btn-primary m-0 px-3 " type="submit" value="Submit" id="save">
 
 
@@ -356,7 +356,7 @@
             $(".documents").append("<input type='text' placeholder='Sertifika Adı'  name='DocumentationName'/>");
             $(".documents").append("<input type='text' placeholder='Açıklama'  name='DocumentDate'/><br/>");
         });
-
+        
 
     </script>
     <script data-cfasync="false" src="../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>

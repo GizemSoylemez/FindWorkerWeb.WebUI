@@ -7,8 +7,7 @@ namespace FindWorkerWeb.WebUI.Models
 {
     public class CvModel
     {
-        public int Id { get; set; }
-        public string CvName { get; set; }
+      
         public List<EducationModel> Education { get; set; }
         public List<ProjectModel> Project { get; set; }
         public List<SkillModel> Skill { get; set; }
@@ -19,5 +18,6 @@ namespace FindWorkerWeb.WebUI.Models
         public List<HobbyModel> Hobby { get; set; }
         public List<LocationModel> Location { get; set; }
         public List<WorkExperienceModel> WorkExperience { get; set; }
+        public List<CvDataModel> CvData { get; set; }
     }
 }
