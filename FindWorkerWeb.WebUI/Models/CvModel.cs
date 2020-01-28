@@ -7,17 +7,16 @@ namespace FindWorkerWeb.WebUI.Models
 {
     public class CvModel
     {
-      
-        public List<EducationModel> Education { get; set; }
-        public List<ProjectModel> Project { get; set; }
-        public List<SkillModel> Skill { get; set; }
-        public List<DocumentModel> Document { get; set; }
-        public List<ReferenceModel> Reference { get; set; }
-        public List<LanguageModel> Language { get; set; }
-        public List<ContactModel> Contact { get; set; }
-        public List<HobbyModel> Hobby { get; set; }
+        public List<EducationModelProperty> Education { get; set; }
+        public List<ProjectModelProperty> Project { get; set; }
+        public List<SkillModelProperty> Skill { get; set; }
+        public List<DocumentModelProperty> Document { get; set; }
+        public List<ReferenceModelProperty> Reference { get; set; }
+        public List<LanguageModelProperty> Language { get; set; }
+        public List<ContactModelProperty> Contact { get; set; }
+        public List<HobbyModelProperty> Hobby { get; set; }
         public List<LocationModel> Location { get; set; }
-        public List<WorkExperienceModel> WorkExperience { get; set; }
-        public List<CvDataModel> CvData { get; set; }
+        public List<WorkExperienceModelProperty> WorkExperience { get; set; }
+        public List<CvDataModelProperty> CvData { get; set; }
     }
 }

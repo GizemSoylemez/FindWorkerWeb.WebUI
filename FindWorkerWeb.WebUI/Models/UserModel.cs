@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -37,6 +38,7 @@ namespace FindWorkerWeb.WebUI.Models
         public string PhoneNumber { get; set; }
 
         public string ProfilePhoto { get; set; }
+        public IFormFile Photo { get; set; }
     }
     
 }

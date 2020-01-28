@@ -1,4 +1,6 @@
-﻿@{
+﻿@model FindWorkerWeb.WebUI.Models.CvModel
+
+@{
     ViewData["Title"] = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
@@ -146,257 +148,252 @@
     </div>
     </div>
     </div>
-    <div class="main-content ">
-        <div id="document" class="theme-shakespeare color-blue">
-            <div class="cv-page" data-index="0">
-                <div class="page-content" data-index="0">
-                    <div class="cv-row static">
-                        <div id="user-photo" class="dummy-photo ">
-                            <img src="~/Cv1/images/no-avatar.jpg" id="user-doc-photo" class="dummy-photo-thumb" alt="Avatar Photo">
+   
+        <div class="main-content ">
+            <div id="document" class="theme-shakespeare color-blue">
+                <div class="cv-page" data-index="0">
+                    <div class="page-content" data-index="0">
+                        <div class="cv-row static">
+                            <div id="user-photo" class="dummy-photo ">
+                                <img src="~/Cv1/images/no-avatar.jpg" id="user-doc-photo" class="dummy-photo-thumb" alt="Avatar Photo">
+                            </div>
+                            
+                            <div class="focus-fix">
+                                <div class="page-title input placeholder" contenteditable=true>Gizem Söylemez</div>
+                            </div>
+                            <div class="page-title-options"><p>Özgeçmiş</p><p>Curriculum Vitae</p></div>
                         </div>
-                        <div class="focus-fix">
-                            <div class="page-title input placeholder" contenteditable=true>Gizem Söylemez</div>
-                        </div>
-                        <div class="page-title-options"><p>Özgeçmiş</p><p>Curriculum Vitae</p></div>
-                    </div>
-                    <div class="cv-row">
-                        <div class="column left" data-index="0">
-                            <section class="paragraph hidden">
-                                <div class="heading placeholder" contenteditable=true data-type="personal">Kişisel Bilgiler</div>
-                                <div class="line-block">
-                                    <div class="line">
-                                        <div class="field placeholder" contenteditable=true>Ad Soyad</div>
-                                        <div class="value placeholder" contenteditable=true>Gizem Söylemez</div>
-                                    </div>
-                                    <div class="line">
-                                        <div class="field placeholder" contenteditable=true>Doğum Tarihi</div>
-                                        <div class="value placeholder" contenteditable=true>22.11.1997</div>
-                                    </div>
-                                    <div class="line">
-                                        <div class="field placeholder" contenteditable=true>Doğum Yeri</div>
-                                        <div class="value placeholder" contenteditable=true>Denizli</div>
-                                    </div>
-                                    <div class="line">
-                                        <div class="field placeholder" contenteditable=true>Medeni Durumu</div>
-                                        <div class="value placeholder" contenteditable=true>Bekar</div>
-                                    </div>
-                                </div>
-                            </section>
-                            <section class="paragraph hidden">
-                                <div class="heading placeholder" contenteditable=true data-type="contact">İletişim Bilgileri</div>
-                                <div class="line-block">
-                                    <div class="line">
-                                        <div class="field placeholder" contenteditable=true>Adres</div>
-                                        <div class="value placeholder" contenteditable=true>Karahasanlı Mahallesi 2001 sokak denizli merkezefendi</div>
-                                    </div>
-                                    <div class="line">
-                                        <div class="field placeholder" contenteditable=true>Telefon</div>
-                                        <div class="value placeholder" contenteditable=true>05344553087</div>
-                                    </div>
-                                    <div class="line">
-                                        <div class="field placeholder" contenteditable=true>Cep</div>
-                                        <div class="value placeholder" contenteditable=true>0532 123 45 67</div>
-                                    </div>
-                                    <div class="line">
-                                        <div class="field placeholder" contenteditable=true>E-Posta</div>
-                                        <div class="value placeholder" contenteditable=true>email@domain.com</div>
-                                    </div>
-                                </div>
-                            </section>
-                            <section class="paragraph hidden">
-                                <div class="heading placeholder" contenteditable=true data-type="work-experience">İş Deneyimi</div>
-                                <div class="line-block">
-                                    <div class="line">
-                                        <div class="field placeholder" contenteditable=true>Mayıs 2011 - devam</div>
-                                        <div class="value placeholder" contenteditable=true>
-                                            Örnek Teknoloji ve Tic. A.Ş.
-                                            <div>Kıdemli Proje Yöneticisi</div>
+                        <div class="cv-row">
+                            <div class="column left" data-index="0">
+                                <section class="paragraph hidden">
+                                    <div class="heading placeholder" contenteditable=true data-type="personal">Kişisel Bilgiler</div>
+                                    <div class="line-block">
+                                        <div class="line">
+                                            <div class="field placeholder" contenteditable=true>Ad Soyad</div>
+                                            <div class="value placeholder" contenteditable=true>Gizem Söylemez</div>
                                         </div>
-                                    </div>
-                                    <div class="line">
-                                        <div class="field placeholder" contenteditable=true>Ocak 2009 – Mart 2011</div>
-                                        <div class="value placeholder" contenteditable=true>
-                                            Örnek Bilgisayar ve Tic. Ltd. Sti.
-                                            <div>Proje Yöneticisi</div>
-                                            <div>• İş geliştirme ve Yazılım Departmanı iletişim</div>
-                                            <div>• Yazılım departmanı taleplerini projelendirmek</div>
+                                        <div class="line">
+                                            <div class="field placeholder" contenteditable=true>Doğum Tarihi</div>
+                                            <div class="value placeholder" contenteditable=true>22.11.1997</div>
                                         </div>
-                                    </div>
-                                    <div class="line">
-                                        <div class="field placeholder" contenteditable=true>Şubat 2007 – Aralık 2008</div>
-                                        <div class="value placeholder" contenteditable=true>
-                                            Örnek Teknoloji Holding
-                                            <div>Proje Yönetici Uzmanı</div>
-                                            <div>• Yazılım süreçlerinin yönetilmesi</div>
-                                            <div>• Database kurulumu</div>
-                                        </div>
-                                    </div>
-                                    <div class="line">
-                                        <div class="field placeholder" contenteditable=true>Ağustos 2006 – Şubat 2007</div>
-                                        <div class="value placeholder" contenteditable=true>
-                                            Örnek Logisitik Şirketi
-                                            <div>Stajer (Yazılım)</div>
-                                            <div>• Operasyon Yönetimi</div>
-                                            <div>• Hataların raporlanması</div>
-                                        </div>
-                                    </div>
-                                    <div class="line">
-                                        <div class="field placeholder" contenteditable=true>Temmuz 2006</div>
-                                        <div class="value placeholder" contenteditable=true>
-                                            Örnek Teknloji Ltd. Sti.
-                                            <div>Zorunlu Üniversite Stajı</div>
-                                            <div>• Operasyon Bilgi İşlem Departmanı</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </section>
-                        </div>
-                        <div class="column right" data-index="1">
-                            <section class="paragraph hidden">
-                                <div class="heading placeholder" contenteditable=true data-type="education">Eğitim Bilgileri</div>
-                                <div class="line-block">
-                                    <div class="line">
-                                        <div class="field placeholder" contenteditable=true>2002 - 2006</div>
-                                        <div class="value placeholder" contenteditable=true>
-                                            Örnek Mühendislik Fakültesi
-                                            <div>Bilgisayar Mühendisliği</div>
-                                        </div>
-                                    </div>
-                                    <div class="line">
-                                        <div class="field placeholder" contenteditable=true>2002-1999</div>
-                                        <div class="value placeholder" contenteditable=true>
-                                            Örnek Anadolu Teknik Lisesi
-                                            <div>Bilgisayar Bölüm</div>
-                                        </div>
-                                    </div>
-                                    <div class="line">
-                                        <div class="field placeholder" contenteditable=true>1991-1999</div>
-                                        <div class="value placeholder" contenteditable=true>Örnek Koleji</div>
-                                    </div>
-                                </div>
-                            </section>
-                            <section class="paragraph hidden">
-                                <div class="heading placeholder" contenteditable=true data-type="courses">Seminerler ve Kurslar</div>
-                                <div class="line-block">
-                                    <div class="line">
-                                        <div class="field placeholder" contenteditable=true>2003</div>
-                                        <div class="value placeholder" contenteditable=true>Java Semineri</div>
-                                    </div>
-                                    <div class="line">
-                                        <div class="field placeholder" contenteditable=true>2004</div>
-                                        <div class="value placeholder" contenteditable=true>Gelişmiş C Kursu</div>
-                                    </div>
-                                </div>
-                            </section>
-                            <section class="paragraph hidden">
-                                <div class="heading placeholder" contenteditable=true data-type="projects">Burslar ve Projeler</div>
-                                <div class="line-block">
-                                    <div class="line">
-                                        <div class="field placeholder" contenteditable=true>2002-2006</div>
-                                        <div class="value placeholder" contenteditable=true>Başbakanlık %100 Eğitim Bursu</div>
-                                    </div>
-                                    <div class="line">
-                                        <div class="field placeholder" contenteditable=true>2003</div>
-                                        <div class="value placeholder" contenteditable=true>Genç Yazılımcılar Ödülü</div>
-                                    </div>
-                                    <div class="line">
-                                        <div class="field placeholder" contenteditable=true>2004</div>
-                                        <div class="value placeholder" contenteditable=true>Tübitak Başarı Ödülü</div>
-                                    </div>
-                                </div>
-                            </section>
-                            <section class="paragraph hidden">
-                                <div class="heading placeholder" contenteditable=true data-type="languages">Yabancı Dil</div>
-                                <div class="line-block">
-                                    <div class="line">
-                                        <div class="field placeholder" contenteditable=true>İngilizce</div>
-                                        <div class="value placeholder" contenteditable=true>yazma çok iyi, konuşma orta</div>
-                                    </div>
-                                    <div class="line">
-                                        <div class="field placeholder" contenteditable=true>Fransızca</div>
-                                        <div class="value placeholder" contenteditable=true>yazma orta, konuşma başlangıç</div>
-                                    </div>
-                                </div>
-                            </section>
-                            <section class="paragraph hidden">
-                                <div class="heading placeholder" contenteditable=true data-type="skills">Yetkinlikler</div>
-                                <div class="line-block">
-                                    <div class="line">
-                                        <div class="field placeholder" contenteditable=true>Bilgisayar</div>
-                                        <div class="value placeholder" contenteditable=true>
-                                            Microsoft Office (Word, Excel, Powerpoint)
-                                            <div>SAP, SPS, MySQL, Oracle</div>
-                                            <div>PHP, Java, C, Swift</div>
-                                        </div>
-                                    </div>
-                                    <div class="line">
-                                        <div class="field placeholder" contenteditable=true>Sertifikalar</div>
-                                        <div class="value placeholder" contenteditable=true>Zend Sertifikası, TOEFL</div>
-                                    </div>
-                                    <div class="line">
-                                        <div class="field placeholder" contenteditable=true>Dernekler</div>
-                                        <div class="value placeholder" contenteditable=true>
-                                            Örnek Yazılım Derneği
-                                            <div>Girişimcilik Derneği</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </section>
-                            <section class="paragraph hidden">
-                                <div class="heading placeholder" contenteditable=true data-type="additional-info">Ek Bilgiler</div>
-                                <div class="line-block">
-                                    <div class="line">
+                                        <div class="line">
+                                            @foreach (var item in Model.Location)
+                                            {
+                                                <div class="field placeholder" contenteditable=true>Doğum Yeri</div>
+                                                <div class="value placeholder" contenteditable=true>@item.City</div>
+                                            }
 
-                                        <div class="field placeholder" contenteditable=true>Ehliyet</div>
-                                        <div class="value placeholder" contenteditable=true>B Sınıfı</div>
-                                    </div>
-                                </div>
-                            </section>
-                            <section class="paragraph hidden">
-                                <div class="heading placeholder" contenteditable=true data-type="references">Referanslar</div>
-                                <div class="line-block">
-                                    <div class="line">
-                                        <div class="field placeholder" contenteditable=true>Ahmet Örneksoy</div>
-                                        <div class="value placeholder" contenteditable=true>
-                                            Örnek Teknoloji ve Tİc. A.Ş.
-                                            <div>GMY Teknoloji</div>
-                                            <div>0123 456 78 90</div>
                                         </div>
                                     </div>
-                                    <div class="line">
-                                        <div class="field placeholder" contenteditable=true>Hakan Örneksoy</div>
-                                        <div class="value placeholder" contenteditable=true>
-                                            Örnek Bilgisayar
-                                            <div>İK Müdürü</div>
-                                            <div>0123 907 58 25</div>
+                                </section>
+                                <section class="paragraph hidden">
+                                    <div class="heading placeholder" contenteditable=true data-type="contact">İletişim Bilgileri</div>
+                                    <div class="line-block">
+                                        @foreach (var item in Model.Contact)
+                                        {
+                                            <div class="line">
+                                                <div class="field placeholder" contenteditable=true>@item.ContactName</div>
+                                                <div class="value placeholder" contenteditable=true>@item.Decription</div>
+                                            </div>
+
+                                        }
+
+                                    </div>
+                                </section>
+                                <section class="paragraph hidden">
+                                    <div class="heading placeholder" contenteditable=true data-type="work-experience">İş Deneyimi</div>
+                                    <div class="line-block">
+                                        <div class="line">
+                                            <div class="field placeholder" contenteditable=true>Mayıs 2011 - devam</div>
+                                            <div class="value placeholder" contenteditable=true>
+                                                Örnek Teknoloji ve Tic. A.Ş.
+                                                <div>Kıdemli Proje Yöneticisi</div>
+                                            </div>
+                                        </div>
+                                        <div class="line">
+                                            <div class="field placeholder" contenteditable=true>Ocak 2009 – Mart 2011</div>
+                                            <div class="value placeholder" contenteditable=true>
+                                                Örnek Bilgisayar ve Tic. Ltd. Sti.
+                                                <div>Proje Yöneticisi</div>
+                                                <div>• İş geliştirme ve Yazılım Departmanı iletişim</div>
+                                                <div>• Yazılım departmanı taleplerini projelendirmek</div>
+                                            </div>
+                                        </div>
+                                        <div class="line">
+                                            <div class="field placeholder" contenteditable=true>Şubat 2007 – Aralık 2008</div>
+                                            <div class="value placeholder" contenteditable=true>
+                                                Örnek Teknoloji Holding
+                                                <div>Proje Yönetici Uzmanı</div>
+                                                <div>• Yazılım süreçlerinin yönetilmesi</div>
+                                                <div>• Database kurulumu</div>
+                                            </div>
+                                        </div>
+                                        <div class="line">
+                                            <div class="field placeholder" contenteditable=true>Ağustos 2006 – Şubat 2007</div>
+                                            <div class="value placeholder" contenteditable=true>
+                                                Örnek Logisitik Şirketi
+                                                <div>Stajer (Yazılım)</div>
+                                                <div>• Operasyon Yönetimi</div>
+                                                <div>• Hataların raporlanması</div>
+                                            </div>
+                                        </div>
+                                        <div class="line">
+                                            <div class="field placeholder" contenteditable=true>Temmuz 2006</div>
+                                            <div class="value placeholder" contenteditable=true>
+                                                Örnek Teknloji Ltd. Sti.
+                                                <div>Zorunlu Üniversite Stajı</div>
+                                                <div>• Operasyon Bilgi İşlem Departmanı</div>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </section>
-                            <section class="paragraph hidden">
-                                <div class="heading placeholder" contenteditable=true data-type="summary">Özet Bilgi</div>
-                                <div class="line-block">
-                                    <div class="line">
-                                        <div class="field placeholder" contenteditable=true>Meslek</div>
-                                        <div class="value placeholder" contenteditable=true>Bilgisayar Mühendisi</div>
+                                </section>
+                            </div>
+                            <div class="column right" data-index="1">
+                                <section class="paragraph hidden">
+                                    <div class="heading placeholder" contenteditable=true data-type="education">Eğitim Bilgileri</div>
+                                    <div class="line-block">
+                                        <div class="line">
+                                            <div class="field placeholder" contenteditable=true>2002 - 2006</div>
+                                            <div class="value placeholder" contenteditable=true>
+                                                Örnek Mühendislik Fakültesi
+                                                <div>Bilgisayar Mühendisliği</div>
+                                            </div>
+                                        </div>
+                                        <div class="line">
+                                            <div class="field placeholder" contenteditable=true>2002-1999</div>
+                                            <div class="value placeholder" contenteditable=true>
+                                                Örnek Anadolu Teknik Lisesi
+                                                <div>Bilgisayar Bölüm</div>
+                                            </div>
+                                        </div>
+                                        <div class="line">
+                                            <div class="field placeholder" contenteditable=true>1991-1999</div>
+                                            <div class="value placeholder" contenteditable=true>Örnek Koleji</div>
+                                        </div>
                                     </div>
-                                </div>
-                            </section>
-                            <section class="paragraph hidden">
-                                <div class="heading placeholder" contenteditable=true data-type="other">Diğer</div>
-                                <div class="line-block">
-                                    <div class="line">
-                                        <div class="field placeholder" contenteditable=true>Hobiler</div>
-                                        <div class="value placeholder" contenteditable=true>Futbol, Sinema</div>
+                                </section>
+                                <section class="paragraph hidden">
+                                    <div class="heading placeholder" contenteditable=true data-type="courses">Seminerler ve Kurslar</div>
+                                    <div class="line-block">
+                                        <div class="line">
+                                            <div class="field placeholder" contenteditable=true>2003</div>
+                                            <div class="value placeholder" contenteditable=true>Java Semineri</div>
+                                        </div>
+                                        <div class="line">
+                                            <div class="field placeholder" contenteditable=true>2004</div>
+                                            <div class="value placeholder" contenteditable=true>Gelişmiş C Kursu</div>
+                                        </div>
                                     </div>
-                                </div>
-                            </section>
+                                </section>
+                                <section class="paragraph hidden">
+                                    <div class="heading placeholder" contenteditable=true data-type="projects">Burslar ve Projeler</div>
+                                    <div class="line-block">
+                                        <div class="line">
+                                            <div class="field placeholder" contenteditable=true>2002-2006</div>
+                                            <div class="value placeholder" contenteditable=true>Başbakanlık %100 Eğitim Bursu</div>
+                                        </div>
+                                        <div class="line">
+                                            <div class="field placeholder" contenteditable=true>2003</div>
+                                            <div class="value placeholder" contenteditable=true>Genç Yazılımcılar Ödülü</div>
+                                        </div>
+                                        <div class="line">
+                                            <div class="field placeholder" contenteditable=true>2004</div>
+                                            <div class="value placeholder" contenteditable=true>Tübitak Başarı Ödülü</div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <section class="paragraph hidden">
+                                    <div class="heading placeholder" contenteditable=true data-type="languages">Yabancı Dil</div>
+                                    <div class="line-block">
+                                        <div class="line">
+                                            <div class="field placeholder" contenteditable=true>İngilizce</div>
+                                            <div class="value placeholder" contenteditable=true>yazma çok iyi, konuşma orta</div>
+                                        </div>
+                                        <div class="line">
+                                            <div class="field placeholder" contenteditable=true>Fransızca</div>
+                                            <div class="value placeholder" contenteditable=true>yazma orta, konuşma başlangıç</div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <section class="paragraph hidden">
+                                    <div class="heading placeholder" contenteditable=true data-type="skills">Yetkinlikler</div>
+                                    <div class="line-block">
+                                        <div class="line">
+                                            <div class="field placeholder" contenteditable=true>Bilgisayar</div>
+                                            <div class="value placeholder" contenteditable=true>
+                                                Microsoft Office (Word, Excel, Powerpoint)
+                                                <div>SAP, SPS, MySQL, Oracle</div>
+                                                <div>PHP, Java, C, Swift</div>
+                                            </div>
+                                        </div>
+                                        <div class="line">
+                                            <div class="field placeholder" contenteditable=true>Sertifikalar</div>
+                                            <div class="value placeholder" contenteditable=true>Zend Sertifikası, TOEFL</div>
+                                        </div>
+                                        <div class="line">
+                                            <div class="field placeholder" contenteditable=true>Dernekler</div>
+                                            <div class="value placeholder" contenteditable=true>
+                                                Örnek Yazılım Derneği
+                                                <div>Girişimcilik Derneği</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <section class="paragraph hidden">
+                                    <div class="heading placeholder" contenteditable=true data-type="additional-info">Ek Bilgiler</div>
+                                    <div class="line-block">
+                                        <div class="line">
+
+                                            <div class="field placeholder" contenteditable=true>Ehliyet</div>
+                                            <div class="value placeholder" contenteditable=true>B Sınıfı</div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <section class="paragraph hidden">
+                                    <div class="heading placeholder" contenteditable=true data-type="references">Referanslar</div>
+                                    <div class="line-block">
+                                        <div class="line">
+                                            <div class="field placeholder" contenteditable=true>Ahmet Örneksoy</div>
+                                            <div class="value placeholder" contenteditable=true>
+                                                Örnek Teknoloji ve Tİc. A.Ş.
+                                                <div>GMY Teknoloji</div>
+                                                <div>0123 456 78 90</div>
+                                            </div>
+                                        </div>
+                                        <div class="line">
+                                            <div class="field placeholder" contenteditable=true>Hakan Örneksoy</div>
+                                            <div class="value placeholder" contenteditable=true>
+                                                Örnek Bilgisayar
+                                                <div>İK Müdürü</div>
+                                                <div>0123 907 58 25</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <section class="paragraph hidden">
+                                    <div class="heading placeholder" contenteditable=true data-type="summary">Özet Bilgi</div>
+                                    <div class="line-block">
+                                        <div class="line">
+                                            <div class="field placeholder" contenteditable=true>Meslek</div>
+                                            <div class="value placeholder" contenteditable=true>Bilgisayar Mühendisi</div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <section class="paragraph hidden">
+                                    <div class="heading placeholder" contenteditable=true data-type="other">Diğer</div>
+                                    <div class="line-block">
+                                        <div class="line">
+                                            <div class="field placeholder" contenteditable=true>Hobiler</div>
+                                            <div class="value placeholder" contenteditable=true>Futbol, Sinema</div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
     <div class="help-bar "></div>
     <div class="selection"></div>
     <div id="cookie-banner" class="cookie-banner">
@@ -412,7 +409,7 @@
 
         </div>
     </div>
-    
+
     <script>
         var data = {};
         data.cv = { "layout": [[[0]], [[1, 2, 3], [4, 5, 6, 7, 8, 9, 10, 11, 12]], [[5]]], "title": { "value": "Gizem \Söylemez", "isPlaceholder": true }, "paragraphs": [{ "lines": [{ "field": { "value": "Ad Soyad", "isPlaceholder": true }, "value": { "value": "Mehmet \u00d6rneksoy", "isPlaceholder": true } }, { "field": { "value": "Do\u011fum Tarihi", "isPlaceholder": true }, "value": { "value": "01.01.1970", "isPlaceholder": true } }, { "field": { "value": "Do\u011fum Yeri", "isPlaceholder": true }, "value": { "value": "\u00d6rnek\u015fehir", "isPlaceholder": true } }, { "field": { "value": "Medeni Durumu", "isPlaceholder": true }, "value": { "value": "Evli", "isPlaceholder": true } }], "heading": { "value": "Ki\u015fisel Bilgiler", "isPlaceholder": true, "paragraphType": "personal" } }, { "lines": [{ "field": { "value": "Adres", "isPlaceholder": true }, "value": { "value": "\u00d6rnek sok. \u00d6rnek Sitesi A Blok D.12 \u00d6rneksemt 12345 \u00d6rnek\u015fehir", "isPlaceholder": true } }, { "field": { "value": "Telefon", "isPlaceholder": true }, "value": { "value": "0123 456 78 90", "isPlaceholder": true } }, { "field": { "value": "Cep", "isPlaceholder": true }, "value": { "value": "0532 123 45 67", "isPlaceholder": true } }, { "field": { "value": "E-Posta", "isPlaceholder": true }, "value": { "value": "email@domain.com", "isPlaceholder": true } }], "heading": { "value": "\u0130leti\u015fim Bilgileri", "isPlaceholder": true, "paragraphType": "contact" } }, { "lines": [{ "field": { "value": "May\u0131s 2011 - devam", "isPlaceholder": true }, "value": { "value": "\u00d6rnek Teknoloji ve Tic. A.\u015e.<div>K\u0131demli Proje Y\u00f6neticisi<\/div>", "isPlaceholder": true } }, { "field": { "value": "Ocak 2009 \u2013 Mart 2011", "isPlaceholder": true }, "value": { "value": "\u00d6rnek Bilgisayar ve Tic. Ltd. Sti.<div>Proje Y\u00f6neticisi<\/div><div>\u2022 \u0130\u015f geli\u015ftirme ve Yaz\u0131l\u0131m Departman\u0131 ileti\u015fim<\/div><div>\u2022 Yaz\u0131l\u0131m departman\u0131 taleplerini projelendirmek<\/div>", "isPlaceholder": true } }, { "field": { "value": "\u015eubat 2007 \u2013 Aral\u0131k 2008", "isPlaceholder": true }, "value": { "value": "\u00d6rnek Teknoloji Holding<div>Proje Y\u00f6netici Uzman\u0131<\/div><div>\u2022 Yaz\u0131l\u0131m s\u00fcre\u00e7lerinin y\u00f6netilmesi<\/div><div>\u2022 Database kurulumu<\/div>", "isPlaceholder": true } }, { "field": { "value": "A\u011fustos 2006 \u2013 \u015eubat 2007", "isPlaceholder": true }, "value": { "value": "\u00d6rnek Logisitik \u015eirketi<div>Stajer (Yaz\u0131l\u0131m)<\/div><div>\u2022 Operasyon Y\u00f6netimi<\/div><div>\u2022 Hatalar\u0131n raporlanmas\u0131<\/div>", "isPlaceholder": true } }, { "field": { "value": "Temmuz 2006", "isPlaceholder": true }, "value": { "value": "\u00d6rnek Teknloji Ltd. Sti.<div>Zorunlu \u00dcniversite Staj\u0131<\/div><div>\u2022 Operasyon Bilgi \u0130\u015flem Departman\u0131<\/div>", "isPlaceholder": true } }], "heading": { "value": "\u0130\u015f Deneyimi", "isPlaceholder": true, "paragraphType": "work-experience" } }, { "lines": [{ "field": { "value": "2002 - 2006", "isPlaceholder": true }, "value": { "value": "\u00d6rnek M\u00fchendislik Fak\u00fcltesi<div>Bilgisayar M\u00fchendisli\u011fi<\/div>", "isPlaceholder": true } }, { "field": { "value": "2002-1999", "isPlaceholder": true }, "value": { "value": "\u00d6rnek Anadolu Teknik Lisesi<div>Bilgisayar B\u00f6l\u00fcm<\/div>", "isPlaceholder": true } }, { "field": { "value": "1991-1999", "isPlaceholder": true }, "value": { "value": "\u00d6rnek Koleji", "isPlaceholder": true } }], "heading": { "value": "E\u011fitim Bilgileri", "isPlaceholder": true, "paragraphType": "education" } }, { "lines": [{ "field": { "value": "2003", "isPlaceholder": true }, "value": { "value": "Java Semineri", "isPlaceholder": true } }, { "field": { "value": "2004", "isPlaceholder": true }, "value": { "value": "Geli\u015fmi\u015f C Kursu", "isPlaceholder": true } }], "heading": { "value": "Seminerler ve Kurslar", "isPlaceholder": true, "paragraphType": "courses" } }, { "lines": [{ "field": { "value": "2002-2006", "isPlaceholder": true }, "value": { "value": "Ba\u015fbakanl\u0131k %100 E\u011fitim Bursu", "isPlaceholder": true } }, { "field": { "value": "2003", "isPlaceholder": true }, "value": { "value": "Gen\u00e7 Yaz\u0131l\u0131mc\u0131lar \u00d6d\u00fcl\u00fc", "isPlaceholder": true } }, { "field": { "value": "2004", "isPlaceholder": true }, "value": { "value": "T\u00fcbitak Ba\u015far\u0131 \u00d6d\u00fcl\u00fc", "isPlaceholder": true } }], "heading": { "value": "Burslar ve Projeler", "isPlaceholder": true, "paragraphType": "projects" } }, { "lines": [{ "field": { "value": "\u0130ngilizce", "isPlaceholder": true }, "value": { "value": "yazma \u00e7ok iyi, konu\u015fma orta", "isPlaceholder": true } }, { "field": { "value": "Frans\u0131zca", "isPlaceholder": true }, "value": { "value": "yazma orta, konu\u015fma ba\u015flang\u0131\u00e7", "isPlaceholder": true } }], "heading": { "value": "Yabanc\u0131 Dil", "isPlaceholder": true, "paragraphType": "languages" } }, { "lines": [{ "field": { "value": "Bilgisayar", "isPlaceholder": true }, "value": { "value": "Microsoft Office (Word, Excel, Powerpoint)<div>SAP, SPS, MySQL, Oracle<\/div><div>PHP, Java, C, Swift<\/div>", "isPlaceholder": true } }, { "field": { "value": "Sertifikalar", "isPlaceholder": true }, "value": { "value": "Zend Sertifikas\u0131, TOEFL", "isPlaceholder": true } }, { "field": { "value": "Dernekler", "isPlaceholder": true }, "value": { "value": "\u00d6rnek Yaz\u0131l\u0131m Derne\u011fi<div>Giri\u015fimcilik Derne\u011fi<\/div>", "isPlaceholder": true } }], "heading": { "value": "Yetkinlikler", "isPlaceholder": true, "paragraphType": "skills" } }, { "lines": [{ "field": { "value": "Ehliyet", "isPlaceholder": true }, "value": { "value": "B S\u0131n\u0131f\u0131", "isPlaceholder": true } }], "heading": { "value": "Ek Bilgiler", "isPlaceholder": true, "paragraphType": "additional-info" } }, { "lines": [{ "field": { "value": "Ahmet \u00d6rneksoy", "isPlaceholder": true }, "value": { "value": "\u00d6rnek Teknoloji ve T\u0130c. A.\u015e.<div>GMY Teknoloji<\/div><div>0123 456 78 90<\/div>", "isPlaceholder": true } }, { "field": { "value": "Hakan \u00d6rneksoy", "isPlaceholder": true }, "value": { "value": "\u00d6rnek Bilgisayar<div>\u0130K M\u00fcd\u00fcr\u00fc<\/div><div>0123 907 58 25<\/div>", "isPlaceholder": true } }], "heading": { "value": "Referanslar", "isPlaceholder": true, "paragraphType": "references" } }, { "lines": [{ "field": { "value": "Meslek", "isPlaceholder": true }, "value": { "value": "Bilgisayar M\u00fchendisi", "isPlaceholder": true } }], "heading": { "value": "\u00d6zet Bilgi", "isPlaceholder": true, "paragraphType": "summary" } }, { "lines": [{ "field": { "value": "Hobiler", "isPlaceholder": true }, "value": { "value": "Futbol, Sinema", "isPlaceholder": true } }], "heading": { "value": "Di\u011fer", "isPlaceholder": true, "paragraphType": "other" } }] };

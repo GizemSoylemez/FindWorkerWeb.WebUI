@@ -26,7 +26,9 @@ namespace FindWorkerWeb.WebUI.Controllers
 
         public IActionResult Cv1()
         {
-            return View();
+            var token=HttpContext.Session.GetString("Token");
+            var response = ApiHelper.Get<CvModel>("User/GetUserInfo",model:null,token);
+            return View("Cv1",response);
         }
         public IActionResult Cv2()
         {
@@ -50,7 +52,7 @@ namespace FindWorkerWeb.WebUI.Controllers
         }
 
         [HttpPost]
-        public IActionResult CVData([FromForm] ProjectModel projectModel , CvDataModel cvdatamodel, DocumentModel documentModel,ContactModel contactModel, EducationModel educationModel,HobbyModel hobbyModel,LanguageModel languageModel,LocationModel locationModel,ReferenceModel referenceModel,SkillModel skillModel,WorkExperienceModel experienceModel)
+        public IActionResult CVData([FromForm] ProjectModel projectModel , CvDataModel cvdatamodel, DocumentModel documentModel,ContactModel contactModel, EducationModel educationModel,HobbyModel hobbyModel,LanguageModel languageModel,LocationModel locationModel,ReferenceModel referenceModel,SkillModel skillModel,WorkExperienceModel experienceModel,IFormFile file)
         {
             var userdata = HttpContext.Session.GetString("Id");
             List<EducationModelProperty> educationList = new List<EducationModelProperty>();

@@ -108,6 +108,7 @@ namespace FindWorkerWeb.WebUI.Controllers
                 HttpContext.Session.SetString("RoleId", userdata.RoleId.ToString());
                 HttpContext.Session.SetString("Name", userdata.Name);
                 HttpContext.Session.SetString("Id", userdata.Id.ToString());
+                HttpContext.Session.SetString("Token", usertoken.token);
 
 
                 return RedirectToAction("UserPanel");
@@ -132,7 +133,7 @@ namespace FindWorkerWeb.WebUI.Controllers
                 var companydata = (LoginCompanyUserModel)ApiHelper.Get<LoginCompanyUserModel>("Company/GetLoginUser", token: companytoken.token);
                 HttpContext.Session.SetString("CompanyEmail", companydata.CompanyEmail);
                 HttpContext.Session.SetString("RoleId", companydata.RoleId.ToString());
-
+                HttpContext.Session.SetString("Token", usertoken.token);
                 //return RedirectToAction("CompanyPanel");
             }
             
